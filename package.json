@@ -1,0 +1,31 @@
+{
+  "name": "real-estate-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Trung Vo",
+  "license": "MIT",
+  "scripts": {
+    "serve": "live-server public/",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "0.28.9",
+    "live-server": "^1.2.0",
+    "node-sass": "4.7.2",
+    "normalize.css": "8.0.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.20.2",
+    "validator": "9.4.1",
+    "webpack": "3.11.0",
+    "webpack-dev-server": "2.11.1"
+  }
+}
