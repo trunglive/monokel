@@ -6,4 +6,4 @@ import Homepage from './components/Homepage';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
-ReactDOM.render(<p><Homepage /></p>, document.getElementById('app'));
+ReactDOM.render(<div><Homepage /></div>, document.getElementById('app'));

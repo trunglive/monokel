@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  color: $color-primary;
+  font-weight: 300;
+  background-color: $color-grey-light-1;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-buttons-set {
+  display: flex;
+}
+
+.nav-buttons-set__divider {
+  border-left: 1px solid $color-primary;
+  height: 2rem;
+}
+
+.logo__text {
+  font-family: $font-display;
+  font-size: 4rem;
+  color: $color-primary;
+}
+
+.search-group {
+  text-align: center;
+  margin-top: 16rem;
+  padding-bottom: 27rem;
+}
+
+.search-group__input {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+
+}
