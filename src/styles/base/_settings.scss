@@ -1,15 +1,25 @@
-//Change colors and spacing to start a new project
-
 // Colors
-$off-black: #20222b;
-$dark-blue: #333745;
-$blue: #3c4251;
-$light-blue: #464b5e;
-$off-white: #a5afd7;
-$purple: #8357c5;
+$color-primary: #182e4b;
+$color-secondary: #c4a66f;
+
+$color-grey-light-1: #f9fafc;
+$color-grey-light-2: #f5f7ff;
+
+$color-blue-dark: #355d8b;
+
+// Fonts
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
 // Spacing
 $s-size: 1.2rem;
 $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 $desktop-breakpoint: 45rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;

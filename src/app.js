@@ -4,4 +4,4 @@ import ReactDOM from 'react-dom';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
-ReactDOM.render(<p>Boilerplate</p>, document.getElementById('app'));
+ReactDOM.render(<p>Real Estate Project</p>, document.getElementById('app'));

@@ -1,12 +1,19 @@
-//tweak it to your project need
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 
 html {
-  font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
 }
 
 body {
-  background: $dark-blue;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: $font-primary;
   font-size: $m-size;
 }
 
