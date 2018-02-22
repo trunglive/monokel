@@ -1,0 +1,48 @@
+.featured-properties-container {
+  position: relative;
+  min-height: 180rem;
+  background: linear-gradient($color-blue-dark, $color-grey-light-2);
+}
+
+.featured-properties {
+  position: absolute;
+  top: -6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94rem;
+  min-height: 150rem;
+  margin: 0 auto;
+  // background-color: #fff;
+}
+
+.featured-properties-inner {
+  position: absolute;
+  top: 30rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94rem;
+  height: 500px;
+  background-color: #fff;
+}
+
+.featured-properties-nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    text-transform: uppercase;
+  }
+}
+
+.featured-properties-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__home {
+    background-color: #c4a66f;
+    width: 23rem;
+    height: 23rem;
+    margin: 2px;
+  }
+}

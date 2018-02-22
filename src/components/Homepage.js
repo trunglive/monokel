@@ -11,7 +11,11 @@ class Homepage extends Component {
     return (
       <div>
         <Header />
-        <FeaturedProperties />
+        <div className="featured-properties-inner">
+        </div>
+        <div className="featured-properties-container">
+          <FeaturedProperties />
+        </div>
         <MeetMonokel />
         <NewlyFeatured />
         <CheapLuxury />
