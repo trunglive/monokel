@@ -4,8 +4,7 @@ class HomeCard extends Component {
   render() {
     return (
       <div className="featured-properties-card__home">
-        <img src="../home-photos/home-1.jpg" />
-        
+        <img src='/images/home-1.jpg' alt='photo' />
       </div>
     )
   }
