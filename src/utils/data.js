@@ -10,7 +10,8 @@ const listing = [
     bedrooms: 3,
     bathrooms: 3,
     area: 40,
-    extras: ['elevator', 'gym']
+    extras: ['elevator', 'gym'],
+    image_url: '/images/home-1.jpg'
   },
   {
     location: {
@@ -23,7 +24,8 @@ const listing = [
     bedrooms: 3,
     bathrooms: 2,
     area: 65,
-    extras: ['elevator', 'pool', 'gym']
+    extras: ['elevator', 'pool', 'gym'],
+    image_url: '/images/home-2.jpg'
   },
   {
     location: {
@@ -36,7 +38,8 @@ const listing = [
     bedrooms: 5,
     bathrooms: 4,
     area: 60,
-    extras: ['pool', 'gym']
+    extras: ['pool', 'gym'],
+    image_url: '/images/home-3.jpg'
   },
   {
     location: {
@@ -49,7 +52,8 @@ const listing = [
     bedrooms: 2,
     bathrooms: 2,
     area: 45,
-    extras: ['elevator']
+    extras: ['elevator'],
+    image_url: '/images/home-4.jpg'
   },
   {
     location: {
@@ -62,7 +66,8 @@ const listing = [
     bedrooms: 6,
     bathrooms: 5,
     area: 110,
-    extras: ['elevator', 'pool', 'gym']
+    extras: ['elevator', 'pool', 'gym'],
+    image_url: '/images/home-5.jpg'
   },
   {
     location: {
@@ -75,7 +80,8 @@ const listing = [
     bedrooms: 2,
     bathrooms: 1,
     area: 70,
-    extras: ['elevator', 'pool']
+    extras: ['elevator', 'pool'],
+    image_url: '/images/home-6.jpg'
   },
   {
     location: {
@@ -88,7 +94,8 @@ const listing = [
     bedrooms: 5,
     bathrooms: 4,
     area: 75,
-    extras: ['pool', 'gym']
+    extras: ['pool', 'gym'],
+    image_url: '/images/home-7.jpg'
   },
   {
     location: {
@@ -101,7 +108,8 @@ const listing = [
     bedrooms: 3,
     bathrooms: 3,
     area: 70,
-    extras: ['pool', 'gym']
+    extras: ['pool', 'gym'],
+    image_url: '/images/home-8.jpg'
   },
   {
     location: {
@@ -114,7 +122,8 @@ const listing = [
     bedrooms: 4,
     bathrooms: 2,
     area: 50,
-    extras: ['elevator', 'pool', 'gym']
+    extras: ['elevator', 'pool', 'gym'],
+    image_url: '/images/home-9.jpg'
   },
   {
     location: {
@@ -127,7 +136,8 @@ const listing = [
     bedrooms: 2,
     bathrooms: 2,
     area: 55,
-    extras: ['gym']
+    extras: ['gym'],
+    image_url: '/images/home-10.jpg'
   },
   {
     location: {
@@ -140,7 +150,8 @@ const listing = [
     bedrooms: 2,
     bathrooms: 2,
     area: 55,
-    extras: ['pool']
+    extras: ['pool'],
+    image_url: '/images/home-11.jpg'
   },
   {
     location: {
@@ -153,7 +164,8 @@ const listing = [
     bedrooms: 3,
     bathrooms: 3,
     area: 80,
-    extras: ['pool']
+    extras: ['pool'],
+    image_url: '/images/home-12.jpg'
   }
 ];
 

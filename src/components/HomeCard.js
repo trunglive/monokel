@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 
+
 class HomeCard extends Component {
+  
+
   render() {
+    const { name, price, bedrooms,bathrooms, image_url } = this.props;
+    console.log(name, price, bedrooms, bathrooms);
+
     return (
       <div className="featured-properties-card-container">
-        <img src="/images/home-1.jpg" alt="photo" />
+        <img src={image_url} alt="photo" />
         <div className="featured-properties-card-container__info">
-          yesssssssss!
+          name - {name}
+          price - {price}
+          bedrooms - {bedrooms}
+          bathrooms - {bathrooms}
         </div>
       </div>
     );
@@ -14,3 +23,4 @@ class HomeCard extends Component {
 }
 
 export default HomeCard;
+

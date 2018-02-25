@@ -1,8 +1,21 @@
 import React, { Component } from 'react';
 import HomeCard from './HomeCard';
+import listing from '../utils/data';
 
 class FeaturedProperties extends Component {
+
+  state = {
+    listing: ''
+  }
+
+  componentWillMount() {
+    this.setState({
+      listing
+    })
+  }
+
   render() {
+    console.log(this.state.listing);
     return (
       <section className="featured-properties">
         <div className="featured-properties-nav">
@@ -23,18 +36,10 @@ class FeaturedProperties extends Component {
           </div>
         </div>
         <div className="featured-properties-card">
-          <HomeCard />
-          <HomeCard />
-          <HomeCard />
-          <HomeCard />
-          <HomeCard />
-          <HomeCard />
-          <HomeCard />
-          <HomeCard />
-          <HomeCard />
-          <HomeCard />
-          <HomeCard />
-          <HomeCard />
+          {this.state.listing.map(home => (
+            <HomeCard {...home} />
+          ))}
+      
         </div>
         
       </section>
