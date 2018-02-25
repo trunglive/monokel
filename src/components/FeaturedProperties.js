@@ -3,7 +3,6 @@ import HomeCard from './HomeCard';
 import listing from '../utils/data';
 
 class FeaturedProperties extends Component {
-
   state = {
     listing: ''
   }
@@ -15,7 +14,7 @@ class FeaturedProperties extends Component {
   }
 
   render() {
-    console.log(this.state.listing);
+    
     return (
       <section className="featured-properties">
         <div className="featured-properties-nav">
