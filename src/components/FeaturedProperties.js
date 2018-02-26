@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import HomeCard from './HomeCard';
 import listing from '../utils/data';
+import TypeDropDown from './TypeFilter';
+import { Dropdown } from 'semantic-ui-react';
 
 class FeaturedProperties extends Component {
   state = {
-    listing: ''
+    filteredListing: ''
   }
 
   componentWillMount() {
     this.setState({
-      listing
+      filteredListing: listing
     })
   }
 
@@ -20,23 +22,13 @@ class FeaturedProperties extends Component {
         <div className="featured-properties-nav">
           <p className="featured-properties-nav__text">Featured Properties</p>
           <div className="featured-propeties-nav__filter">
-            <button>
-              Type
-            </button>
-            <button>
-              Price
-            </button>
-            <button>
-              Size
-            </button>
-            <button>
-              Rooms
-            </button>
+            <TypeDropDown />
+        
           </div>
         </div>
         <div className="featured-properties-card">
-          {this.state.listing.map(home => (
-            <HomeCard {...home} />
+          {this.state.filteredListing.map(home => (
+            <HomeCard key={home.name} {...home} />
           ))}
       
         </div>

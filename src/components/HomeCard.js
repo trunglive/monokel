@@ -5,7 +5,7 @@ class HomeCard extends Component {
   
   render() {
     const { name, price, type, bedrooms, bathrooms, area, image_url } = this.props;
-    console.log(name, price, bedrooms, bathrooms);
+    // console.log(name, price, bedrooms, bathrooms);
 
     return (
       <div className="featured-properties-card-container">
