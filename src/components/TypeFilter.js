@@ -24,7 +24,7 @@ class TypeDropDown extends Component {
     console.log(this.state.dropdownValue);
 
     return (
-      <Dropdown upward floating options={type} text="Type" onChange={this.onTypeChange} value={this.state.dropdownValue} />
+      <Dropdown upward floating options={type} text="Type" onChange={this.onTypeChange} valuesss={this.state.dropdownValue} />
     )
   }
 }

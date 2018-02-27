@@ -1,0 +1,33 @@
+.meet-monokel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 75rem;
+  background-color: $color-primary;
+  color: #fff;
+}
+
+.meet-monokel-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 2rem;
+}
+
+.meet-monokel-logo {
+  font-size: 4rem;
+  font-family: $font-display;
+  margin-bottom: 6rem;
+}
+
+.meet-monokel-introduction {
+  width: 30%;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+
+

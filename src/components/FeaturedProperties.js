@@ -6,7 +6,8 @@ import { Dropdown } from 'semantic-ui-react';
 
 class FeaturedProperties extends Component {
   state = {
-    filteredListing: ''
+    filteredListing: '',
+    dropdownValue: ''
   }
 
   componentWillMount() {
@@ -16,7 +17,7 @@ class FeaturedProperties extends Component {
   }
 
   render() {
-    
+
     return (
       <section className="featured-properties">
         <div className="featured-properties-nav">
