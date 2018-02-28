@@ -8,12 +8,19 @@ import * as Option from '../utils/helpers';
 class FeaturedProperties extends Component {
   state = {
     listing: '',
-    typeValue: 'all'
+    typeValue: 'all',
+    priceValue: 'all'
   };
 
   onTypeChange = (event, { value }) => {
     this.setState({
       typeValue: value
+    });
+  };
+
+  onBedroomChange = (event, { value }) => {
+    this.setState({
+      priceValue: value
     });
   };
 
@@ -36,6 +43,16 @@ class FeaturedProperties extends Component {
               options={Option.type}
               text="Type"
               onChange={this.onTypeChange}
+              className="type-dropdown"
+            />
+
+            <Dropdown
+              upward
+              floating
+              options={Option.bedrooms}
+              text="Bedrooms"
+              onChange={this.onBedroomChange}
+              className="bedrooms-dropdown"
             />
           </div>
         </div>
