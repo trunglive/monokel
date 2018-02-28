@@ -1,0 +1,29 @@
+footer {
+  height: 24rem;
+  background-color: $color-primary;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 94rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+  color: #fff;
+
+  &__logo {
+    font-family: $font-display;
+    font-size: 2.5rem;
+  }
+
+  &__nav {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    & > div {
+      margin-right: 4rem;
+    }
+  }
+}
