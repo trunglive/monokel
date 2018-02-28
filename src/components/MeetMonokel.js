@@ -7,7 +7,9 @@ class MeetMonokel extends Component {
         <div className="meet-monokel-text">Meet Monokel</div>
         <div className="meet-monokel-logo">Monokel</div>
         <div className="meet-monokel-introduction">
-          Are you tired of searching an ideal fancy home in the U.S.? Monokel is an optimal search engine for your need. Let's experience unique homes all over the states.
+          Are you tired of searching an ideal fancy home in the U.S.? Monokel is
+          an optimal search engine for your need. Let's experience unique homes
+          all over the states.
         </div>
         <button>Learn More</button>
       </div>
