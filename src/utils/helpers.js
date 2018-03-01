@@ -1,4 +1,3 @@
-
 export const type = [
   { key: 'all', text: 'All', value: 'all' },
   { key: 'studio', text: 'Studio', value: 'studio' },
@@ -30,5 +29,5 @@ export const bedrooms = [
   { key: '3', text: 'Three', value: 3 },
   { key: '4', text: 'Four', value: 4 },
   { key: '5', text: 'Five', value: 5 },
-  { key: '6', text: 'Six', value: 6 },
+  { key: '6', text: 'Six', value: 6 }
 ];

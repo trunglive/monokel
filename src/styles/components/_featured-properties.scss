@@ -32,7 +32,6 @@
   display: flex;
   justify-content: flex-end;
   margin-top: -4rem;
-  // background-color: red;
   z-index: 3;
 }
 
@@ -178,7 +177,8 @@
   }
 }
 
-.type-dropdown, .bedrooms-dropdown {
+.type-dropdown,
+.bedrooms-dropdown {
   padding-right: 3rem;
   font-size: 1.4rem;
   font-weight: 300;

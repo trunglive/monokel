@@ -202,7 +202,6 @@ export const newlyFeatured = [
   }
 ];
 
-
 export const cheapLuxury = [
   {
     name: 'Alacater',
@@ -263,5 +262,5 @@ export const cheapLuxury = [
     name: 'Kerwitche',
     price: 3299,
     image_url: '/images/cheap_luxury/home-cl-12.jpeg'
-  },
+  }
 ];
