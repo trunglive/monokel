@@ -1,7 +1,7 @@
 header {
   display: flex;
   flex-direction: column;
-  height: 54vh;
+  height: 65vh;
   padding-top: 3rem;
   color: $color-primary;
   font-weight: 300;
@@ -62,8 +62,52 @@ header {
   }
 
   &__input {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.search-group__input--bar input {
+  padding: 5px;
+  width: 30rem;
+  height: 4.2rem;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.1);
+
+  &::placeholder {
+    color: $color-primary;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  padding: 0.9rem 1.2rem;
+  font-size: 2.4rem;
+  color: $color-primary;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+.rectangle-button {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $color-secondary;
+
+  &:hover {
+    color: $color-primary;
+    cursor: pointer;
   }
 }

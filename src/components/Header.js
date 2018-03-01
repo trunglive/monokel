@@ -30,11 +30,16 @@ class Header extends Component {
         <div className="search-group">
           <div className="search-group__content">
             <p>Monokel is your search engine for finding homes in the U.S.,</p>
-            <p className="search-group__content--bold">in which city do you want to start?</p>
+            <p className="search-group__content--bold">
+              in which city do you want to start?
+            </p>
           </div>
           <div className="search-group__input">
-            <div className="search-group__input--bar">search input</div>
-            <div className="rectangle-button">FIND button</div>
+            <i className="navigation-icon ion-ios-location-outline"></i>
+            <div className="search-group__input--bar">
+              <input type="text" placeholder="Search homes" />
+            </div>
+            <div className="rectangle-button">Find</div>
           </div>
         </div>
       </header>
