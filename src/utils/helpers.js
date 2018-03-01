@@ -31,3 +31,11 @@ export const bedrooms = [
   { key: '5', text: 'Five', value: 5 },
   { key: '6', text: 'Six', value: 6 }
 ];
+
+export const sort = [
+  { key: 'default', text: 'Default', value: 'default' },
+  { key: 'price', text: 'Price', value: 'price' },
+  { key: 'area', text: 'Area', value: 'area' },
+  { key: 'bedrooms', text: 'Bedrooms', value: 'bedrooms' },
+  { key: 'bathrooms', text: 'Bathrooms', value: 'bathrooms' },
+];
