@@ -12,15 +12,17 @@ header {
   display: flex;
   justify-content: space-around;
   margin-bottom: 14rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 
   &__bookmarks {
     display: flex;
+    align-items: center;
   }
 }
 
 .nav-buttons-set {
   display: flex;
+  align-items: center;
 
   &__divider {
     margin: 0 2rem;
@@ -40,7 +42,7 @@ header {
 .ion-ios-personadd-outline,
 .ion-ios-person-outline,
 .ion-ios-star-outline {
-  font-size: 2rem;
+  font-size: 2.4rem;
   padding-right: 8px;
 }
 

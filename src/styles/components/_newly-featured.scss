@@ -1,3 +1,55 @@
 .newly-featured {
   height: 30rem;
+  margin-top: $xl-size;
+  margin-bottom: $xl-size;
+
+  .newly-featured-title {
+    margin-left: 50rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    color: $color-primary;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+}
+
+.newly-featured-list {
+  display: flex;
+  justify-content: flex-end;
+
+  &__gallery {
+    position: relative;
+    transition: transform 0.3s ease-out;
+
+    &:hover {
+      transform: translateY(-1.2rem);
+    }
+  }
+
+  &__gallery img {
+    width: 15rem;
+    margin-right: 5px;
+  }
+}
+
+.thin-card-info {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: #fff;
+  z-index: 100;
+
+  p {
+    margin: 0;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  &__price {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
 }

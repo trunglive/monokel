@@ -12,6 +12,7 @@ class Homepage extends Component {
       <div>
         <Header />
         <div className="featured-properties-inner">
+          <p className="featured-properties-inner__text">Featured Properties</p>
         </div>
         <div className="featured-properties-container">
           <FeaturedProperties />

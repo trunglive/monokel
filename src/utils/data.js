@@ -1,4 +1,4 @@
-const listing = [
+export const listing = [
   {
     location: {
       city: 'New York',
@@ -11,7 +11,7 @@ const listing = [
     bathrooms: 3,
     area: 40,
     extras: ['elevator', 'gym'],
-    image_url: '/images/home-1.jpg'
+    image_url: '/images/featured_properties/home-fp-1.jpg'
   },
   {
     location: {
@@ -25,7 +25,7 @@ const listing = [
     bathrooms: 2,
     area: 65,
     extras: ['elevator', 'pool', 'gym'],
-    image_url: '/images/home-2.jpg'
+    image_url: '/images/featured_properties/home-fp-2.jpg'
   },
   {
     location: {
@@ -39,7 +39,7 @@ const listing = [
     bathrooms: 4,
     area: 60,
     extras: ['pool', 'gym'],
-    image_url: '/images/home-3.jpg'
+    image_url: '/images/featured_properties/home-fp-3.jpg'
   },
   {
     location: {
@@ -53,7 +53,7 @@ const listing = [
     bathrooms: 2,
     area: 45,
     extras: ['elevator'],
-    image_url: '/images/home-4.jpg'
+    image_url: '/images/featured_properties/home-fp-4.jpg'
   },
   {
     location: {
@@ -67,7 +67,7 @@ const listing = [
     bathrooms: 5,
     area: 90,
     extras: ['elevator', 'pool', 'gym'],
-    image_url: '/images/home-5.jpg'
+    image_url: '/images/featured_properties/home-fp-5.jpg'
   },
   {
     location: {
@@ -81,7 +81,7 @@ const listing = [
     bathrooms: 1,
     area: 70,
     extras: ['elevator', 'pool'],
-    image_url: '/images/home-6.jpg'
+    image_url: '/images/featured_properties/home-fp-6.jpg'
   },
   {
     location: {
@@ -95,7 +95,7 @@ const listing = [
     bathrooms: 4,
     area: 75,
     extras: ['pool', 'gym'],
-    image_url: '/images/home-7.jpg'
+    image_url: '/images/featured_properties/home-fp-7.jpg'
   },
   {
     location: {
@@ -109,7 +109,7 @@ const listing = [
     bathrooms: 3,
     area: 70,
     extras: ['pool', 'gym'],
-    image_url: '/images/home-8.jpg'
+    image_url: '/images/featured_properties/home-fp-8.jpg'
   },
   {
     location: {
@@ -123,7 +123,7 @@ const listing = [
     bathrooms: 2,
     area: 50,
     extras: ['elevator', 'pool', 'gym'],
-    image_url: '/images/home-9.jpg'
+    image_url: '/images/featured_properties/home-fp-9.jpg'
   },
   {
     location: {
@@ -137,7 +137,7 @@ const listing = [
     bathrooms: 2,
     area: 55,
     extras: ['gym'],
-    image_url: '/images/home-10.jpg'
+    image_url: '/images/featured_properties/home-fp-10.jpg'
   },
   {
     location: {
@@ -151,7 +151,7 @@ const listing = [
     bathrooms: 2,
     area: 55,
     extras: ['pool'],
-    image_url: '/images/home-11.jpg'
+    image_url: '/images/featured_properties/home-fp-11.jpg'
   },
   {
     location: {
@@ -165,8 +165,103 @@ const listing = [
     bathrooms: 3,
     area: 80,
     extras: ['pool'],
-    image_url: '/images/home-12.jpg'
+    image_url: '/images/featured_properties/home-fp-12.jpg'
   }
 ];
 
-export default listing;
+export const newlyFeatured = [
+  {
+    name: 'Intervite',
+    price: 4499,
+    image_url: '/images/newly_featured/home-nf-1.jpg'
+  },
+  {
+    name: 'Prezza',
+    price: 3999,
+    image_url: '/images/newly_featured/home-nf-2.jpg'
+  },
+  {
+    name: 'Verwillen',
+    price: 6699,
+    image_url: '/images/newly_featured/home-nf-6.jpg'
+  },
+  {
+    name: 'Anamandara',
+    price: 4799,
+    image_url: '/images/newly_featured/home-nf-3.jpg'
+  },
+  {
+    name: 'Juilleri',
+    price: 3699,
+    image_url: '/images/newly_featured/home-nf-4.jpg'
+  },
+  {
+    name: 'Tulvez',
+    price: 5799,
+    image_url: '/images/newly_featured/home-nf-5.jpg'
+  }
+];
+
+
+export const cheapLuxury = [
+  {
+    name: Alacater,
+    price: 5299,
+    image_url: '/images/cheap_luxury/home-cl-1.jpg'
+  },
+  {
+    name: Biesae,
+    price: 3599,
+    image_url: '/images/cheap_luxury/home-cl-2.jpg'
+  },
+  {
+    name: Heuria,
+    price: 6799,
+    image_url: '/images/cheap_luxury/home-cl-3.jpg'
+  },
+  {
+    name: Alateria,
+    price: 4099,
+    image_url: '/images/cheap_luxury/home-cl-4.jpg'
+  },
+  {
+    name: Luxuria,
+    price: 7399,
+    image_url: '/images/cheap_luxury/home-cl-5.jpg'
+  },
+  {
+    name: Famerias,
+    price: 3999,
+    image_url: '/images/cheap_luxury/home-cl-6.jpg'
+  },
+  {
+    name: Tulicia,
+    price: 5899,
+    image_url: '/images/cheap_luxury/home-cl-7.jpg'
+  },
+  {
+    name: Ricavia,
+    price: 6599,
+    image_url: '/images/cheap_luxury/home-cl-8.jpg'
+  },
+  {
+    name: Hazanae,
+    price: 7099,
+    image_url: '/images/cheap_luxury/home-cl-9.jpg'
+  },
+  {
+    name: Yerisette,
+    price: 4499,
+    image_url: '/images/cheap_luxury/home-cl-10.jpg'
+  },
+  {
+    name: Dervalina,
+    price: 5299,
+    image_url: '/images/cheap_luxury/home-cl-11.jpg'
+  },
+  {
+    name: Kerwitche,
+    price: 3299,
+    image_url: '/images/cheap_luxury/home-cl-12.jpg'
+  },
+];
