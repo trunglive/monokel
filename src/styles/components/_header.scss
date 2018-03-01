@@ -1,7 +1,7 @@
 header {
   display: flex;
   flex-direction: column;
-  height: 65vh;
+  min-height: 75vh;
   padding-top: 3rem;
   color: $color-primary;
   font-weight: 300;
@@ -11,7 +11,7 @@ header {
 .nav-buttons {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 14rem;
+  margin-bottom: 8rem;
   font-size: 1.3rem;
 
   &__bookmarks {
@@ -54,7 +54,7 @@ header {
 
 .search-group {
   text-align: center;
-  padding-bottom: 28rem;
+  padding-bottom: 10rem;
   font-size: 1.4rem;
 
   &__content {

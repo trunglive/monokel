@@ -11,29 +11,28 @@ class HomeCard extends Component {
       area,
       image_url
     } = this.props;
-    // console.log(name, price, bedrooms, bathrooms);
 
     return (
-      <div className="featured-properties-card-container">
+      <div className="featured-properties-card-list-item">
         <img src={image_url} alt="photo" />
         <img src="/icons/bookmark.svg" className="bookmark-icon" />
         <div className="circle-arrow">
           <i className="ion-android-arrow-forward"></i>
         </div>
-        <div className="featured-properties-card-container__title">
-          <div className="featured-properties-card-container__title--name">
+        <div className="featured-properties-card-list-item__title">
+          <div className="featured-properties-card-list-item__title--name">
             {name}
           </div>
-          <div className="featured-properties-card-container__title--price">
+          <div className="featured-properties-card-list-item__title--price">
             ${price}
           </div>
         </div>
 
-        <div className="featured-properties-card-container__info">
-          <div className="featured-properties-card-container__info--top">
+        <div className="featured-properties-card-list-item__info">
+          <div className="featured-properties-card-list-item__info--top">
             <div>{type}</div>
           </div>
-          <div className="featured-properties-card-container__info--bottom">
+          <div className="featured-properties-card-list-item__info--bottom">
             <div className="bedrooms-group">
               <img src="icons/bedrooms.png" className="bedrooms-group__icon" />
               <div className="bedrooms-group__number">{bedrooms}</div>

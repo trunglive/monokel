@@ -9,7 +9,7 @@ import Footer from './Footer';
 class Homepage extends Component {
   render() {
     return (
-      <div>
+      <div className="homepage">
         <Header />
         <div className="featured-properties-inner">
           <p className="featured-properties-inner__text">Featured Properties</p>
@@ -17,6 +17,7 @@ class Homepage extends Component {
         <div className="featured-properties-container">
           <FeaturedProperties />
         </div>
+        
         <MeetMonokel />
         <NewlyFeatured />
         <CheapLuxury />

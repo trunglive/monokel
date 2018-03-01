@@ -205,63 +205,63 @@ export const newlyFeatured = [
 
 export const cheapLuxury = [
   {
-    name: Alacater,
+    name: 'Alacater',
     price: 5299,
-    image_url: '/images/cheap_luxury/home-cl-1.jpg'
+    image_url: '/images/cheap_luxury/home-cl-1.jpeg'
   },
   {
-    name: Biesae,
+    name: 'Biesae',
     price: 3599,
-    image_url: '/images/cheap_luxury/home-cl-2.jpg'
+    image_url: '/images/cheap_luxury/home-cl-2.jpeg'
   },
   {
-    name: Heuria,
+    name: 'Heuria',
     price: 6799,
-    image_url: '/images/cheap_luxury/home-cl-3.jpg'
+    image_url: '/images/cheap_luxury/home-cl-3.jpeg'
   },
   {
-    name: Alateria,
+    name: 'Alateria',
     price: 4099,
-    image_url: '/images/cheap_luxury/home-cl-4.jpg'
+    image_url: '/images/cheap_luxury/home-cl-4.jpeg'
   },
   {
-    name: Luxuria,
+    name: 'Luxuria',
     price: 7399,
-    image_url: '/images/cheap_luxury/home-cl-5.jpg'
+    image_url: '/images/cheap_luxury/home-cl-5.jpeg'
   },
   {
-    name: Famerias,
+    name: 'Famerias',
     price: 3999,
-    image_url: '/images/cheap_luxury/home-cl-6.jpg'
+    image_url: '/images/cheap_luxury/home-cl-6.jpeg'
   },
   {
-    name: Tulicia,
+    name: 'Tulicia',
     price: 5899,
-    image_url: '/images/cheap_luxury/home-cl-7.jpg'
+    image_url: '/images/cheap_luxury/home-cl-7.jpeg'
   },
   {
-    name: Ricavia,
+    name: 'Ricavia',
     price: 6599,
-    image_url: '/images/cheap_luxury/home-cl-8.jpg'
+    image_url: '/images/cheap_luxury/home-cl-8.jpeg'
   },
   {
-    name: Hazanae,
+    name: 'Hazanae',
     price: 7099,
-    image_url: '/images/cheap_luxury/home-cl-9.jpg'
+    image_url: '/images/cheap_luxury/home-cl-9.jpeg'
   },
   {
-    name: Yerisette,
+    name: 'Yerisette',
     price: 4499,
-    image_url: '/images/cheap_luxury/home-cl-10.jpg'
+    image_url: '/images/cheap_luxury/home-cl-10.jpeg'
   },
   {
-    name: Dervalina,
+    name: 'Dervalina',
     price: 5299,
-    image_url: '/images/cheap_luxury/home-cl-11.jpg'
+    image_url: '/images/cheap_luxury/home-cl-11.jpeg'
   },
   {
-    name: Kerwitche,
+    name: 'Kerwitche',
     price: 3299,
-    image_url: '/images/cheap_luxury/home-cl-12.jpg'
+    image_url: '/images/cheap_luxury/home-cl-12.jpeg'
   },
 ];

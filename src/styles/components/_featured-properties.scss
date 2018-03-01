@@ -1,62 +1,58 @@
 .featured-properties-container {
   position: relative;
-  min-height: 90rem;
+  min-height: 30rem;
   background: linear-gradient($color-blue-dark, $color-grey-light-2);
-}
-
-.featured-properties {
-  position: absolute;
-  top: -6rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 104rem;
-  min-height: 150rem;
-  margin: 0 auto;
 }
 
 .featured-properties-inner {
   position: absolute;
-  top: 35rem;
+  top: 44.4rem;
   left: 50%;
   transform: translateX(-50%);
   width: 97.2rem;
-  height: 500px;
+  height: 26rem;
   background-color: #fff;
   box-shadow: 3px -5px 30px -10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 
   &__text {
-    padding-top: 2rem;
-    padding-left: 3rem;
+    padding-top: 1.5rem;
+    padding-left: 2.5rem;
     text-transform: uppercase;
     font-size: 1.2rem;
+    color: $color-primary;
     letter-spacing: 3px;
   }
 }
 
 .featured-properties-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: flex-end;
-  margin-right: 3rem;
-  margin-top: -3rem;
-
-  // &__filter {
-  //   font-size: 1rem;
-  // }
+  margin-top: -4rem;
+  // background-color: red;
+  z-index: 3;
 }
 
-.featured-properties-card {
+.featured-properties-card-list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1.5rem;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: $xl-size 0;
   font-size: 1.4rem;
 }
 
-.featured-properties-card-container {
+.featured-properties-card-list-item {
   position: relative;
   width: 24rem;
   height: 24rem;
   margin: 2px;
+  z-index: 2;
 
   &__title {
     position: absolute;
