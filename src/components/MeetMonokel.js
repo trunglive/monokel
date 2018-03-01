@@ -4,6 +4,7 @@ class MeetMonokel extends Component {
   render() {
     return (
       <div className="meet-monokel-container">
+        <div className="meet-monokel-container__overlay" />
         <div className="meet-monokel-text">Meet Monokel</div>
         <div className="meet-monokel-logo">Monokel</div>
         <div className="meet-monokel-introduction">
@@ -11,7 +12,7 @@ class MeetMonokel extends Component {
           an optimal search engine for your need. Let's experience unique homes
           all over the states.
         </div>
-        <button>Learn More</button>
+        <a className="meet-monokel-button" href="#">Learn More</a>
       </div>
     );
   }
