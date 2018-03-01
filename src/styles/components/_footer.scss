@@ -8,22 +8,29 @@ footer {
   justify-content: space-between;
   width: 94rem;
   margin: 0 auto;
-  padding-top: 3rem;
+  padding-top: 5rem;
   color: #fff;
 
   &__logo {
     font-family: $font-display;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   &__nav {
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 300;
+    letter-spacing: 2px;
     text-transform: uppercase;
 
+    &--social-facebook,
+    &--social-instagram {
+      padding-right: 2rem;
+      font-size: 1.6rem;
+    }
+
     & > div {
-      margin-right: 4rem;
+      margin-right: 6rem;
     }
   }
 }

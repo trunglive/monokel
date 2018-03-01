@@ -65,7 +65,7 @@ const listing = [
     type: 'Villa',
     bedrooms: 6,
     bathrooms: 5,
-    area: 110,
+    area: 90,
     extras: ['elevator', 'pool', 'gym'],
     image_url: '/images/home-5.jpg'
   },
@@ -117,7 +117,7 @@ const listing = [
       state: 'NY'
     },
     name: 'Christe',
-    price: 7899,
+    price: 7299,
     type: 'Condo',
     bedrooms: 4,
     bathrooms: 2,

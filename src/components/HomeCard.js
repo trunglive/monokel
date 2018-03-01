@@ -17,6 +17,9 @@ class HomeCard extends Component {
       <div className="featured-properties-card-container">
         <img src={image_url} alt="photo" />
         <img src="/icons/bookmark.svg" className="bookmark-icon" />
+        <div className="circle-arrow">
+          <i className="ion-android-arrow-forward"></i>
+        </div>
         <div className="featured-properties-card-container__title">
           <div className="featured-properties-card-container__title--name">
             {name}

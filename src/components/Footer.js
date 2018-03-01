@@ -10,8 +10,9 @@ class Footer extends Component {
             <div className="footer__nav--account">Your account</div>
             <div className="footer__nav--help">Help</div>
             <div className="footer__nav--social">
-              <span>FB</span>
-              <span>IG</span>
+              <i className="footer__nav--social-facebook ion-social-facebook" />
+
+              <i className="footer__nav--social-instagram ion-social-instagram-outline" />
             </div>
           </div>
         </div>

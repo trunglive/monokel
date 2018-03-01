@@ -84,7 +84,7 @@
     color: $color-primary;
 
     &--top {
-      padding-top: 1.5rem;
+      padding-top: 2rem;
       font-size: 1.2rem;
       font-weight: 300;
       text-transform: uppercase;
@@ -107,11 +107,39 @@
   right: 2rem;
   width: 1.7rem;
   height: 1.7rem;
-  transition: all 0.2s ease-out;
+  transition: all 0.1s ease;
 
   &:hover {
     width: 1.9rem;
     height: 1.9rem;
+  }
+}
+
+.circle-arrow {
+  position: absolute;
+  top: 10.5rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 2px 17px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+}
+
+.ion-android-arrow-forward {
+  display: block;
+  padding-left: 1.4rem;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  color: $color-primary;
+
+  &:hover {
+    color: #fff;
   }
 }
 
