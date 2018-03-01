@@ -7,12 +7,12 @@ class Header extends Component {
         <div className="nav-buttons">
           <div className="nav-buttons-set">
             <div className="nav-buttons-set__sign-up">
-              <button>signup icon</button>
-              <span>Sign up</span>
+              <i class="ion-ios-personadd-outline" />
+              <span className="sign-up-text">Sign up</span>
             </div>
             <div className="nav-buttons-set__divider" />
             <div className="nav-buttons-set__log-in">
-              <button>login icon</button>
+              <i className="ion-ios-person-outline" />
               <span>Log in</span>
             </div>
           </div>
@@ -22,7 +22,7 @@ class Header extends Component {
           </div>
 
           <div className="nav-buttons__bookmarks">
-            <button>bookmark icon</button>
+            <i className="ion-ios-star-outline" />
             <span>Your bookmarks</span>
           </div>
         </div>

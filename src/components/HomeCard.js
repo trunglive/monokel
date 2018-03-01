@@ -30,9 +30,28 @@ class HomeCard extends Component {
             <div>{type}</div>
           </div>
           <div className="featured-properties-card-container__info--bottom">
-            <div>{bedrooms} bedrooms</div>
-            <div>{bathrooms} bathrooms</div>
-            <div>{area} m2</div>
+            <div className="bedrooms-group">
+              <img src="icons/bedrooms.svg" className="bedrooms-group__icon" />
+              <div className="bedrooms-group__number">{bedrooms}</div>
+            </div>
+
+            <div className="bathrooms-group">
+              <img
+                src="icons/bathrooms.svg"
+                className="bathrooms-group__icon"
+              />
+              <div className="bathrooms-group__number">{bathrooms}</div>
+            </div>
+
+            <div className="area-group">
+              <img src="icons/area.svg" className="area-group__icon" />
+              <div className="area-group__number">
+                {area}
+                <span>
+                  m<sup>2</sup>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

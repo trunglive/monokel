@@ -13,15 +13,35 @@ header {
   justify-content: space-around;
   margin-bottom: 14rem;
   font-size: 1.1rem;
+
+  &__bookmarks {
+    display: flex;
+  }
 }
 
 .nav-buttons-set {
   display: flex;
 
   &__divider {
-    border-left: 1px solid $color-primary;
+    margin: 0 2rem;
     height: 2rem;
+    border-right: 1px solid $color-primary;
   }
+
+  &__sign-up {
+    display: flex;
+  }
+
+  &__log-in {
+    display: flex;
+  }
+}
+
+.ion-ios-personadd-outline,
+.ion-ios-person-outline,
+.ion-ios-star-outline {
+  font-size: 2rem;
+  padding-right: 8px;
 }
 
 .logo__text {
