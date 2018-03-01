@@ -16,6 +16,7 @@ class HomeCard extends Component {
     return (
       <div className="featured-properties-card-container">
         <img src={image_url} alt="photo" />
+        <img src="/icons/bookmark.svg" className="bookmark-icon" />
         <div className="featured-properties-card-container__title">
           <div className="featured-properties-card-container__title--name">
             {name}
@@ -48,7 +49,7 @@ class HomeCard extends Component {
               <div className="area-group__number">
                 {area}
                 <span>
-                  m<sup>2</sup>
+                  <sup></sup>
                 </span>
               </div>
             </div>

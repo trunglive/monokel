@@ -7,7 +7,7 @@ class Header extends Component {
         <div className="nav-buttons">
           <div className="nav-buttons-set">
             <div className="nav-buttons-set__sign-up">
-              <i class="ion-ios-personadd-outline" />
+              <i className="ion-ios-personadd-outline" />
               <span className="sign-up-text">Sign up</span>
             </div>
             <div className="nav-buttons-set__divider" />
@@ -30,7 +30,7 @@ class Header extends Component {
         <div className="search-group">
           <div className="search-group__content">
             <p>Monokel is your search engine for finding homes in the U.S.,</p>
-            <p>in which city do you want to start?</p>
+            <p className="search-group__content--bold">in which city do you want to start?</p>
           </div>
           <div className="search-group__input">
             <div className="search-group__input--bar">search input</div>

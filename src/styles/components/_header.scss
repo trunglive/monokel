@@ -55,6 +55,12 @@ header {
   padding-bottom: 28rem;
   font-size: 1.4rem;
 
+  &__content {
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
   &__input {
     display: flex;
     justify-content: center;
