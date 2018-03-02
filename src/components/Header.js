@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
+
   render() {
+    const { searchValue, onSearchChange } = this.props;
     return (
       <header>
         <div className="nav-buttons">
@@ -38,7 +40,7 @@ class Header extends Component {
           </div>
           <div className="search-group__input">
             <div className="search-group__input--bar">
-              <input type="text" placeholder="Search homes" />
+              <input type="text" placeholder="Search homes" value={searchValue} onChange={onSearchChange}/>
               <img src="/icons/navigation.png" className="navigation-icon" />
             </div>
             <div className="rectangle-button">Find</div>

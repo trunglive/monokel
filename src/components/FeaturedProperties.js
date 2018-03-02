@@ -32,6 +32,7 @@ class FeaturedProperties extends Component {
 
   render() {
     const { listing, typeValue, sortValue } = this.state;
+    const { searchValue } = this.props;
 
     return (
       <section className="featured-properties">
@@ -55,8 +56,7 @@ class FeaturedProperties extends Component {
               className="sort-dropdown"
             />
           </div>
-
-          {sorting(listing, typeValue, sortValue)}
+          {sorting(listing, typeValue, sortValue, searchValue)}
         </div>
       </section>
     );
@@ -65,8 +65,16 @@ class FeaturedProperties extends Component {
 
 export default FeaturedProperties;
 
-const sorting = (listing, typeValue, sortValue) => {
-  if (sortValue === 'default' && typeValue === 'all') {
+const sorting = (listing, typeValue, sortValue, searchValue) => {
+  if (searchValue) {
+    return listing
+      .filter(home =>
+        home.location.city.toLowerCase().includes(searchValue.toLowerCase())
+      )
+      .map(filteredHome => (
+        <HomeCard key={filteredHome.name} {...filteredHome} />
+      ));
+  } else if (sortValue === 'default' && typeValue === 'all') {
     return listing.map(home => <HomeCard key={home.name} {...home} />);
   } else if (sortValue !== 'default' && typeValue === 'all') {
     return listing
@@ -77,11 +85,11 @@ const sorting = (listing, typeValue, sortValue) => {
       .map(sortedHome => <HomeCard key={sortedHome.name} {...sortedHome} />);
   } else {
     return listing
+      .filter(home => home.type.toLowerCase() === typeValue)
       .sort(
         (currentHome, nextHome) =>
           currentHome[sortValue] > nextHome[sortValue] ? 1 : -1
       )
-      .filter(home => home.type.toLowerCase() === typeValue)
       .map(filteredHome => (
         <HomeCard key={filteredHome.name} {...filteredHome} />
       ));

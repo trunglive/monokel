@@ -7,23 +7,37 @@ import CheapLuxury from './CheapLuxury';
 import Footer from './Footer';
 
 class Homepage extends Component {
+  state = {
+    value: ''
+  };
+
+  handleSearchChange = event => {
+    this.setState({
+      value: event.target.value
+    });
+  };
+
   render() {
+    const { value } = this.state;
+    
     return (
       <div className="homepage">
-        <Header />
+        <Header
+          onSearchChange={this.handleSearchChange}
+          searchValue={value}
+        />
         <div className="featured-properties-inner">
           <p className="featured-properties-inner__text">Featured Properties</p>
         </div>
         <div className="featured-properties-container">
-          <FeaturedProperties />
+          <FeaturedProperties searchValue={value} />
         </div>
-        
         <MeetMonokel />
         <NewlyFeatured />
         <CheapLuxury />
         <Footer />
       </div>
-    )
+    );
   }
 }
 
