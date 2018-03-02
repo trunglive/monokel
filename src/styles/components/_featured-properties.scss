@@ -127,6 +127,7 @@
   &:hover {
     background-color: $color-secondary;
     cursor: pointer;
+
   }
 }
 
@@ -142,30 +143,8 @@
   }
 }
 
-.bedrooms-group {
-  position: relative;
-
-  &__icon {
-    position: absolute;
-  }
-
-  &__number {
-    padding-left: 3rem;
-  }
-}
-
-.bathrooms-group {
-  position: relative;
-
-  &__icon {
-    position: absolute;
-  }
-
-  &__number {
-    padding-left: 3rem;
-  }
-}
-
+.bedrooms-group,
+.bathrooms-group,
 .area-group {
   position: relative;
 

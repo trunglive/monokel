@@ -7,12 +7,14 @@ class Header extends Component {
         <div className="nav-buttons">
           <div className="nav-buttons-set">
             <div className="nav-buttons-set__sign-up">
-              <i className="ion-ios-personadd-outline" />
+              <img src="/icons/user-signup.png" className="sign-up-icon" />
+
               <span className="sign-up-text">Sign up</span>
             </div>
             <div className="nav-buttons-set__divider" />
             <div className="nav-buttons-set__log-in">
-              <i className="ion-ios-person-outline" />
+              <img src="/icons/user-login.png" className="log-in-icon" />
+
               <span>Log in</span>
             </div>
           </div>
@@ -22,7 +24,7 @@ class Header extends Component {
           </div>
 
           <div className="nav-buttons__bookmarks">
-            <i className="ion-ios-star-outline" />
+            <img src="/icons/bookmark-dark.png" className="bookmark-saved-icon" />
             <span>Your bookmarks</span>
           </div>
         </div>
@@ -35,9 +37,9 @@ class Header extends Component {
             </p>
           </div>
           <div className="search-group__input">
-            <i className="navigation-icon ion-ios-location-outline"></i>
             <div className="search-group__input--bar">
               <input type="text" placeholder="Search homes" />
+              <img src="/icons/navigation.png" className="navigation-icon" />
             </div>
             <div className="rectangle-button">Find</div>
           </div>
@@ -48,3 +50,8 @@ class Header extends Component {
 }
 
 export default Header;
+
+// <i className="ion-ios-star-outline" />
+
+// <i className="ion-ios-personadd-outline" />
+// <i className="navigation-icon ion-ios-location-outline"></i>
