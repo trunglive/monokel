@@ -6,7 +6,7 @@
 This project is built using ReactJS for user interfaces and SASS for styling. 
 
 ## Important
-The data API is limited to search keywords of cities, which can be found in 
+The search bar is limited to particular keywords of cities, which can be found in 
 [SEARCH_TERMS](https://github.com/trunglive/real-estate-project/blob/master/SEARCH_TERMS.md) file.
 
 ## Demo
