@@ -9,7 +9,7 @@ class FeaturedProperties extends Component {
   state = {
     listing: '',
     typeValue: 'all',
-    sortValue: ''
+    sortValue: 'default'
   };
 
   onTypeChange = (event, { value }) => {
@@ -31,12 +31,7 @@ class FeaturedProperties extends Component {
   }
 
   render() {
-    const { listing, sortValue } = this.state;
-    if (this.state.typeValue !== 'all') {
-      listing.filter(
-        home => home.type.toLowerCase() === this.state.typeValue
-      )
-    }
+    const { listing, typeValue, sortValue } = this.state;
 
     return (
       <section className="featured-properties">
@@ -61,9 +56,7 @@ class FeaturedProperties extends Component {
             />
           </div>
 
-          {this.state.sortValue === 'default'
-            ? null
-            : sorting(listing, sortValue)}
+          {sorting(listing, typeValue, sortValue)}
         </div>
       </section>
     );
@@ -72,26 +65,25 @@ class FeaturedProperties extends Component {
 
 export default FeaturedProperties;
 
-const sorting = (array, value) => {
-  return array
-    .sort((currentHome, nextHome) => {
-      return currentHome[value] > nextHome[value] ? 1 : -1;
-    })
-    .map(home => <HomeCard key={home.name} {...home} />);
+const sorting = (listing, typeValue, sortValue) => {
+  if (sortValue === 'default' && typeValue === 'all') {
+    return listing.map(home => <HomeCard key={home.name} {...home} />);
+  } else if (sortValue !== 'default' && typeValue === 'all') {
+    return listing
+      .sort(
+        (currentHome, nextHome) =>
+          currentHome[sortValue] > nextHome[sortValue] ? 1 : -1
+      )
+      .map(sortedHome => <HomeCard key={sortedHome.name} {...sortedHome} />);
+  } else {
+    return listing
+      .sort(
+        (currentHome, nextHome) =>
+          currentHome[sortValue] > nextHome[sortValue] ? 1 : -1
+      )
+      .filter(home => home.type.toLowerCase() === typeValue)
+      .map(filteredHome => (
+        <HomeCard key={filteredHome.name} {...filteredHome} />
+      ));
+  }
 };
-
-// {this.state.sortValue === 'default'
-//             ? listing.map(home => <HomeCard key={home.name} {...home} />)
-//             : sorting(listing, this.state.sortValue)}
-
-// {
-//   this.state.typeValue === 'all'
-//     ? listing.map(home => <HomeCard key={home.name} {...home} />)
-//     : listing
-//       .filter(
-//         home => home.type.toLowerCase() === this.state.typeValue
-//       )
-//       .map(filteredHome => (
-//         <HomeCard key={filteredHome.name} {...filteredHome} />
-//       ))
-// }

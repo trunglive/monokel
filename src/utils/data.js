@@ -245,8 +245,8 @@ export const listing = [
     name: 'Reveier',
     price: 7499,
     type: 'House',
-    bedrooms: 5,
-    bathrooms: 4,
+    bedrooms: 6,
+    bathrooms: 5,
     area: 86,
     extras: ['pool', 'gym', 'elevator'],
     image_url: '/images/featured_properties/home-fp-18.jpg'
