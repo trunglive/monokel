@@ -50,8 +50,3 @@ class Header extends Component {
 }
 
 export default Header;
-
-// <i className="ion-ios-star-outline" />
-
-// <i className="ion-ios-personadd-outline" />
-// <i className="navigation-icon ion-ios-location-outline"></i>

@@ -32,6 +32,11 @@ class FeaturedProperties extends Component {
 
   render() {
     const { listing, sortValue } = this.state;
+    if (this.state.typeValue !== 'all') {
+      listing.filter(
+        home => home.type.toLowerCase() === this.state.typeValue
+      )
+    }
 
     return (
       <section className="featured-properties">
@@ -79,12 +84,14 @@ const sorting = (array, value) => {
 //             ? listing.map(home => <HomeCard key={home.name} {...home} />)
 //             : sorting(listing, this.state.sortValue)}
 
-// {this.state.typeValue === 'all'
-//             ? listing.map(home => <HomeCard key={home.name} {...home} />)
-//             : listing
-//                 .filter(
-//                   home => home.type.toLowerCase() === this.state.typeValue
-//                 )
-//                 .map(filteredHome => (
-//                   <HomeCard key={filteredHome.name} {...filteredHome} />
-//                 ))}
+// {
+//   this.state.typeValue === 'all'
+//     ? listing.map(home => <HomeCard key={home.name} {...home} />)
+//     : listing
+//       .filter(
+//         home => home.type.toLowerCase() === this.state.typeValue
+//       )
+//       .map(filteredHome => (
+//         <HomeCard key={filteredHome.name} {...filteredHome} />
+//       ))
+// }

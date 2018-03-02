@@ -78,6 +78,7 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
   }
@@ -117,7 +118,6 @@ header {
 .rectangle-button {
   padding: 1rem 3rem;
   font-size: 1.2rem;
-  font-weight: 300;
   text-transform: uppercase;
   color: #fff;
   background-color: $color-secondary;

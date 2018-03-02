@@ -1,5 +1,5 @@
 footer {
-  height: 24rem;
+  min-height: 24rem;
   background-color: $color-primary;
 }
 
@@ -37,7 +37,8 @@ footer {
 }
 
 .author {
-  margin-top: $xl-size;
+  padding-top: 14rem;
+  padding-bottom: 4rem;
   text-align: center;
   color: #fff;
   font-weight: 100;

@@ -5,11 +5,11 @@ export const listing = [
       state: 'NY'
     },
     name: 'Gefante',
-    price: 5499,
+    price: 7199,
     type: 'Studio',
     bedrooms: 3,
     bathrooms: 3,
-    area: 40,
+    area: 42,
     extras: ['elevator', 'gym'],
     image_url: '/images/featured_properties/home-fp-1.jpg'
   },
@@ -20,10 +20,10 @@ export const listing = [
     },
     name: 'Marbella',
     price: 5999,
-    type: 'Villa',
+    type: 'Condo',
     bedrooms: 3,
     bathrooms: 2,
-    area: 65,
+    area: 61,
     extras: ['elevator', 'pool', 'gym'],
     image_url: '/images/featured_properties/home-fp-2.jpg'
   },
@@ -37,7 +37,7 @@ export const listing = [
     type: 'Condo',
     bedrooms: 5,
     bathrooms: 4,
-    area: 60,
+    area: 66,
     extras: ['pool', 'gym'],
     image_url: '/images/featured_properties/home-fp-3.jpg'
   },
@@ -51,7 +51,7 @@ export const listing = [
     type: 'Apartment',
     bedrooms: 2,
     bathrooms: 2,
-    area: 45,
+    area: 49,
     extras: ['elevator'],
     image_url: '/images/featured_properties/home-fp-4.jpg'
   },
@@ -63,9 +63,9 @@ export const listing = [
     name: 'Diffe',
     price: 6999,
     type: 'Villa',
-    bedrooms: 6,
-    bathrooms: 5,
-    area: 90,
+    bedrooms: 2,
+    bathrooms: 1,
+    area: 65,
     extras: ['elevator', 'pool', 'gym'],
     image_url: '/images/featured_properties/home-fp-5.jpg'
   },
@@ -90,10 +90,10 @@ export const listing = [
     },
     name: 'Zwische',
     price: 7499,
-    type: 'Villa',
+    type: 'House',
     bedrooms: 5,
     bathrooms: 4,
-    area: 75,
+    area: 74,
     extras: ['pool', 'gym'],
     image_url: '/images/featured_properties/home-fp-7.jpg'
   },
@@ -104,10 +104,10 @@ export const listing = [
     },
     name: 'Allele',
     price: 3699,
-    type: 'Apartment',
+    type: 'House',
     bedrooms: 3,
     bathrooms: 3,
-    area: 70,
+    area: 77,
     extras: ['pool', 'gym'],
     image_url: '/images/featured_properties/home-fp-8.jpg'
   },
@@ -117,11 +117,11 @@ export const listing = [
       state: 'NY'
     },
     name: 'Christe',
-    price: 7299,
+    price: 6099,
     type: 'Condo',
     bedrooms: 4,
     bathrooms: 2,
-    area: 50,
+    area: 52,
     extras: ['elevator', 'pool', 'gym'],
     image_url: '/images/featured_properties/home-fp-9.jpg'
   },
@@ -145,7 +145,7 @@ export const listing = [
       state: 'PA'
     },
     name: 'Fident',
-    price: 2999,
+    price: 5799,
     type: 'Studio',
     bedrooms: 2,
     bathrooms: 2,
@@ -166,7 +166,231 @@ export const listing = [
     area: 80,
     extras: ['pool'],
     image_url: '/images/featured_properties/home-fp-12.jpg'
-  }
+  },
+  {
+    location: {
+      city: 'Charlotte',
+      state: 'NC'
+    },
+    name: 'Eutilar',
+    price: 7099,
+    type: 'House',
+    bedrooms: 4,
+    bathrooms: 3,
+    area: 60,
+    extras: ['pool', 'gym'],
+    image_url: '/images/featured_properties/home-fp-13.jpg'
+  },
+  {
+    location: {
+      city: 'New York',
+      state: 'NY'
+    },
+    name: 'Valzwie',
+    price: 4299,
+    type: 'Condo',
+    bedrooms: 2,
+    bathrooms: 2,
+    area: 40,
+    extras: ['pool'],
+    image_url: '/images/featured_properties/home-fp-14.jpg'
+  },
+  {
+    location: {
+      city: 'Miami',
+      state: 'FL'
+    },
+    name: 'Quinque',
+    price: 7799,
+    type: 'Villa',
+    bedrooms: 5,
+    bathrooms: 3,
+    area: 69,
+    extras: ['pool'],
+    image_url: '/images/featured_properties/home-fp-15.jpg'
+  },
+  {
+    location: {
+      city: 'Pittsburgh',
+      state: 'PA'
+    },
+    name: 'Modella',
+    price: 3899,
+    type: 'House',
+    bedrooms: 3,
+    bathrooms: 2,
+    area: 53,
+    extras: ['pool', 'gym'],
+    image_url: '/images/featured_properties/home-fp-16.jpg'
+  },
+  {
+    location: {
+      city: 'Miami',
+      state: 'FL'
+    },
+    name: 'Enerdite',
+    price: 3899,
+    type: 'Villa',
+    bedrooms: 3,
+    bathrooms: 1,
+    area: 44,
+    extras: ['gym'],
+    image_url: '/images/featured_properties/home-fp-17.jpg'
+  },
+  {
+    location: {
+      city: 'Pittsburgh',
+      state: 'PA'
+    },
+    name: 'Reveier',
+    price: 7499,
+    type: 'House',
+    bedrooms: 5,
+    bathrooms: 4,
+    area: 86,
+    extras: ['pool', 'gym', 'elevator'],
+    image_url: '/images/featured_properties/home-fp-18.jpg'
+  },
+  {
+    location: {
+      city: 'New York',
+      state: 'NY'
+    },
+    name: 'Parto',
+    price: 4599,
+    type: 'Apartment',
+    bedrooms: 2,
+    bathrooms: 2,
+    area: 40,
+    extras: ['pool'],
+    image_url: '/images/featured_properties/home-fp-19.jpg'
+  },
+  {
+    location: {
+      city: 'New York',
+      state: 'NY'
+    },
+    name: 'Bosniere',
+    price: 4899,
+    type: 'Studio',
+    bedrooms: 2,
+    bathrooms: 2,
+    area: 58,
+    extras: ['pool', 'gym', 'elevator'],
+    image_url: '/images/featured_properties/home-fp-20.jpg'
+  },
+  {
+    location: {
+      city: 'Charlotte',
+      state: 'NC'
+    },
+    name: 'Leviere',
+    price: 5999,
+    type: 'Condo',
+    bedrooms: 2,
+    bathrooms: 2,
+    area: 46,
+    extras: ['gym', 'elevator'],
+    image_url: '/images/featured_properties/home-fp-21.jpg'
+  },
+  {
+    location: {
+      city: 'Pittsburgh',
+      state: 'PA'
+    },
+    name: 'Lutzvie',
+    price: 5799,
+    type: 'House',
+    bedrooms: 3,
+    bathrooms: 3,
+    area: 66,
+    extras: ['gym', 'elevator'],
+    image_url: '/images/featured_properties/home-fp-22.jpg'
+  },
+  {
+    location: {
+      city: 'New York',
+      state: 'NY'
+    },
+    name: 'Liavates',
+    price: 5599,
+    type: 'Apartment',
+    bedrooms: 4,
+    bathrooms: 4,
+    area: 39,
+    extras: ['pool', 'gym', 'elevator'],
+    image_url: '/images/featured_properties/home-fp-23.jpg'
+  },
+  {
+    location: {
+      city: 'Miami',
+      state: 'FL'
+    },
+    name: 'Mamiar',
+    price: 6499,
+    type: 'Villa',
+    bedrooms: 3,
+    bathrooms: 3,
+    area: 57,
+    extras: ['elevator'],
+    image_url: '/images/featured_properties/home-fp-24.jpg'
+  },
+  {
+    location: {
+      city: 'New York',
+      state: 'NY'
+    },
+    name: 'Haitezur',
+    price: 7499,
+    type: 'Studio',
+    bedrooms: 3,
+    bathrooms: 1,
+    area: 49,
+    extras: ['pool', 'elevator'],
+    image_url: '/images/featured_properties/home-fp-25.jpg'
+  },
+  {
+    location: {
+      city: 'Pittsburgh',
+      state: 'PA'
+    },
+    name: 'Yoarie',
+    price: 3499,
+    type: 'Studio',
+    bedrooms: 2,
+    bathrooms: 1,
+    area: 41,
+    extras: ['pool'],
+    image_url: '/images/featured_properties/home-fp-26.jpg'
+  },
+  {
+    location: {
+      city: 'Charlotte',
+      state: 'NC'
+    },
+    name: 'Cessa',
+    price: 7099,
+    type: 'Apartment',
+    bedrooms: 5,
+    bathrooms: 3,
+    area: 64,
+    extras: ['gym', 'elevator'],
+    image_url: '/images/featured_properties/home-fp-27.jpg'
+  },
+  {
+    location: {
+      city: 'Miami',
+      state: 'FL'
+    },
+    name: 'Flozater',
+    price: 5199,
+    type: 'Studio',
+    bedrooms: 4,
+    bathrooms: 4,
+    area: 56,
+    extras: ['pool', 'gym', 'elevator'],
+    image_url: '/images/featured_properties/home-fp-28.jpg'
+  },
 ];
 
 export const newlyFeatured = [
