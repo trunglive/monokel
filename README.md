@@ -7,10 +7,10 @@ This project is built using ReactJS for user interfaces and SASS for styling.
 
 ## Important
 The search bar is limited to particular keywords of cities, which can be found in 
-[SEARCH_TERMS](https://github.com/trunglive/real-estate-project/blob/master/SEARCH_TERMS.md) file.
+[SEARCH_TERMS](SEARCH_TERMS.md) file.
 
 ## Demo
-This project is in progress, the link will be updated later.
+![screenshot](screenshot.png)
 
 ## Quick Start
 **Clone the project**
