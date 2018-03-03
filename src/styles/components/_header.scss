@@ -103,12 +103,15 @@ header {
   padding-left: 4rem;
   width: 30rem;
   height: 4.2rem;
+  color: $color-primary;
   border: none;
   outline: none;
   box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.1);
 
+
   &::placeholder {
-    color: $color-primary;
+    color: $color-grey-light-3;
+    font-weight: 100;
   }
 
   &:focus::placeholder {
