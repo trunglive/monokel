@@ -229,7 +229,7 @@ export const listing = [
       state: 'FL'
     },
     name: 'Enerdite',
-    price: 3899,
+    price: 3799,
     type: 'Villa',
     bedrooms: 3,
     bathrooms: 1,
@@ -355,7 +355,7 @@ export const listing = [
       state: 'PA'
     },
     name: 'Yoarie',
-    price: 3499,
+    price: 3399,
     type: 'Studio',
     bedrooms: 2,
     bathrooms: 1,
