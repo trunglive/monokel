@@ -126,7 +126,6 @@
   &:hover {
     background-color: $color-secondary;
     cursor: pointer;
-
   }
 }
 
@@ -156,9 +155,23 @@
   }
 }
 
-.type-dropdown,
-.bedrooms-dropdown {
-  padding-right: 3rem;
+.dropdown.type-dropdown,
+.dropdown.sort-dropdown {
+  margin-left: 3rem;
   font-size: 1.4rem;
   font-weight: 300;
+
+  .menu {
+    border: none;
+
+    .text {
+      padding: 5px;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.ui.floating.dropdown .menu {
+  box-shadow: 8px 8px 10px -10px rgba(0, 0, 0, 0.2) !important;
 }
