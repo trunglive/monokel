@@ -124,6 +124,7 @@ header {
   text-transform: uppercase;
   color: #fff;
   background-color: $color-secondary;
+  box-shadow: 4px 4px 15px -10px rgba(0, 0, 0, 0.1);
 
   &:hover {
     color: $color-primary;
