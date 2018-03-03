@@ -19,13 +19,10 @@ class Homepage extends Component {
 
   render() {
     const { value } = this.state;
-    
+
     return (
       <div className="homepage">
-        <Header
-          onSearchChange={this.handleSearchChange}
-          searchValue={value}
-        />
+        <Header onSearchChange={this.handleSearchChange} searchValue={value} />
         <div className="featured-properties-inner">
           <p className="featured-properties-inner__text">Featured Properties</p>
         </div>

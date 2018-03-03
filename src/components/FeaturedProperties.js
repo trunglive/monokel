@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import HomeCard from './HomeCard';
 import { listing } from '../utils/data';
-import TypeDropDown from './TypeFilter';
 import { Dropdown } from 'semantic-ui-react';
 import * as Option from '../utils/helpers';
 
