@@ -24,8 +24,8 @@
 
     &:hover {
       transform: scale(1.2);
-      z-index: 10;
       cursor: pointer;
+      z-index: 10;
     }
   }
 
@@ -40,7 +40,8 @@
   bottom: 2rem;
   left: 2rem;
   color: #fff;
-  z-index: 100;
+  font-weight: 300;
+  z-index: 10;
 
   p {
     margin: 0;
@@ -48,13 +49,9 @@
 
   &__name {
     font-size: 1.2rem;
-    font-weight: 300;
   }
 
   &__price {
     font-size: 1.6rem;
-    font-weight: 300;
   }
 }
-
-
