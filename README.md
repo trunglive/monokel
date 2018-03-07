@@ -1,7 +1,7 @@
 **Design credit of the project: [Olga Radzikowna](https://dribbble.com/shots/4177962-Find-fancy-home-abroad/attachments/954897)**
 ----
 # Monokel
-> Monokel project is a real estate single page application. Users can be able to filter the results based on type (apartment, house, studio, villa, condo) and sorting (price, area, bedrooms, bathrooms)
+> Monokel project is a real estate single page application. Users can be able to filter the results based on type (apartment, house, studio, villa, condo) and sorting (price, area, bedrooms, bathrooms).
 
 This project is built using ReactJS for user interfaces and SASS for styling. 
 
@@ -29,6 +29,3 @@ Trung Vo ([trunglive](https://github.com/trunglive))
 
 ## License
 This project is licensed under the MIT License. Please check the `LICENSE` file.
-
-
-
