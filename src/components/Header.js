@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const Header = ({ searchValue, onSearchChange }) => (
-  <header>
+  <header className="header">
     <div className="nav-buttons">
       <div className="nav-buttons-set">
         <div className="nav-buttons-set__sign-up">
