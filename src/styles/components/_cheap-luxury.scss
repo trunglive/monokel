@@ -1,6 +1,7 @@
 .cheap-luxury {
   min-height: 30rem;
-  margin: $xl-size 0;
+  padding: $xl-size 0;
+  background-color: $color-grey-light-1;
 
   &__title {
     margin-left: 20vw;
