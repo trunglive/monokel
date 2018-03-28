@@ -11,9 +11,9 @@ const HomeCard = ({
 }) => (
   <div className="featured-properties-card-list-item">
     <img src={image_url} alt="photo" />
-    <img src="/icons/bookmark-white.png" className="bookmark-icon" />
+    <img src="/icons/bookmark-light.svg" className="bookmark-card-icon" />
     <div className="circle-arrow">
-      <i className="ion-android-arrow-forward" />
+      <img className="circle-arrow__icon" src="/icons/arrow-right.svg" />
     </div>
     <div className="featured-properties-card-list-item__title">
       <div className="featured-properties-card-list-item__title--name">
@@ -30,17 +30,15 @@ const HomeCard = ({
       </div>
       <div className="featured-properties-card-list-item__info--bottom">
         <div className="bedrooms-group">
-          <img src="icons/bedrooms.png" className="bedrooms-group__icon" />
+          <img src="icons/bedrooms.svg" className="bedrooms-group__icon" />
           <div className="bedrooms-group__number">{bedrooms}</div>
         </div>
-
         <div className="bathrooms-group">
-          <img src="icons/bathrooms.png" className="bathrooms-group__icon" />
+          <img src="icons/bathrooms.svg" className="bathrooms-group__icon" />
           <div className="bathrooms-group__number">{bathrooms}</div>
         </div>
-
         <div className="area-group">
-          <img src="icons/area.png" className="area-group__icon" />
+          <img src="icons/area.svg" className="area-group__icon" />
           <div className="area-group__number">
             {area}
             <span>

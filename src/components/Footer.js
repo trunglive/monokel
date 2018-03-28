@@ -8,8 +8,8 @@ const Footer = () => (
         <div className="footer__nav--account">Your account</div>
         <div className="footer__nav--help">Help</div>
         <div className="footer__nav--social">
-          <i className="footer__nav--social-facebook ion-social-facebook" />
-          <i className="footer__nav--social-instagram ion-social-instagram-outline" />
+          <img className="footer__nav--social-facebook" src="icons/facebook.svg" />
+          <img className="footer__nav--social-instagram" src="icons/instagram.svg" />
         </div>
       </div>
     </div>
@@ -34,3 +34,6 @@ const Footer = () => (
 );
 
 export default Footer;
+
+{/* <i className="footer__nav--social-facebook ion-social-facebook" /> */}
+{/* <i className="footer__nav--social-instagram ion-social-instagram-outline" /> */}

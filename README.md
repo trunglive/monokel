@@ -10,7 +10,7 @@ The search bar is limited to particular keywords of cities, which can be found i
 [SEARCH_TERMS](SEARCH_TERMS.md) file.
 
 ### Demo
-![screenshot](screenshot.jpg)
+![monokel](monokel-demo.jpg)
 
 ### Quick Start
 **Clone the project**

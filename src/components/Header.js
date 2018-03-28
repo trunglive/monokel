@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 const Header = ({ searchValue, onSearchChange }) => (
   <header className="header">
     <div className="nav-buttons">
       <div className="nav-buttons-set">
         <div className="nav-buttons-set__sign-up">
-          <img src="/icons/user-signup.png" className="sign-up-icon" />
-
+          <img src="/icons/user-signup.svg" className="sign-up-icon" />
           <span className="sign-up-text">Sign up</span>
         </div>
         <div className="nav-buttons-set__divider" />
         <div className="nav-buttons-set__log-in">
-          <img src="/icons/user-login.png" className="log-in-icon" />
-
+          <img src="/icons/user-login.svg" className="log-in-icon" />
           <span>Log in</span>
         </div>
       </div>
@@ -22,7 +20,7 @@ const Header = ({ searchValue, onSearchChange }) => (
       </div>
 
       <div className="nav-buttons__bookmarks">
-        <img src="/icons/bookmark-dark.png" className="bookmark-saved-icon" />
+        <img src="/icons/bookmark-dark.svg" className="bookmark-saved-icon" />
         <span>Your bookmarks</span>
       </div>
     </div>
@@ -42,7 +40,7 @@ const Header = ({ searchValue, onSearchChange }) => (
             value={searchValue}
             onChange={onSearchChange}
           />
-          <img src="/icons/navigation.png" className="navigation-icon" />
+          <img src="/icons/navigation.svg" className="navigation-icon" />
         </div>
         <div className="rectangle-button">Find</div>
       </div>

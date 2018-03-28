@@ -27,7 +27,11 @@ footer {
     &--social-facebook,
     &--social-instagram {
       padding-left: 2rem;
-      font-size: 1.6rem;
+      width: 3.3rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     & > div {
