@@ -31,21 +31,21 @@ const HomeCard = ({
       <div className="featured-properties-card-list-item__info--bottom">
         <div className="bedrooms-group">
           <img src="icons/bedrooms.svg" className="bedrooms-group__icon" />
-          <div className="bedrooms-group__number">{bedrooms}</div>
+          <span className="bedrooms-group__number">{bedrooms}</span>
         </div>
         <div className="bathrooms-group">
           <img src="icons/bathrooms.svg" className="bathrooms-group__icon" />
-          <div className="bathrooms-group__number">{bathrooms}</div>
+          <span className="bathrooms-group__number">{bathrooms}</span>
         </div>
         <div className="area-group">
           <img src="icons/area.svg" className="area-group__icon" />
-          <div className="area-group__number">
+          <span className="area-group__number">
             {area}
             <span>
               m
               <sup>2</sup>
             </span>
-          </div>
+          </span>
         </div>
       </div>
     </div>

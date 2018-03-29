@@ -6,7 +6,7 @@
 
 .featured-properties-inner {
   position: absolute;
-  top: 46rem;
+  top: 67%;
   left: 50%;
   transform: translateX(-50%);
   width: 97.2rem;
@@ -93,12 +93,27 @@
 
     &--bottom {
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
       padding-top: 1.5rem;
       font-size: 1rem;
       font-weight: 300;
     }
+  }
+}
+
+.bedrooms-group,
+.bathrooms-group,
+.area-group {
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  &__number {
+    padding-left: 3rem;
   }
 }
 
@@ -138,20 +153,6 @@
     padding-left: 1.4rem;
     padding-top: 1.4rem;
     width: 2.5rem;
-  }
-}
-
-.bedrooms-group,
-.bathrooms-group,
-.area-group {
-  position: relative;
-
-  &__icon {
-    position: absolute;
-  }
-
-  &__number {
-    padding-left: 3rem;
   }
 }
 

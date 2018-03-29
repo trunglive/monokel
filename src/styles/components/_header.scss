@@ -82,21 +82,11 @@
     align-items: center;
     margin-top: 4rem;
     margin-bottom: 2rem;
+
+    &--bar {
+      position: relative;
+    }
   }
-}
-
-.search-group__input--bar {
-  position: relative;
-}
-
-.navigation-icon {
-  position: absolute;
-  top: 50%;
-  left: 1rem;
-  width: 2rem;
-  height: 2rem;
-  color: $color-primary;
-  transform: translateY(-50%);
 }
 
 .search-group__input--bar input {
@@ -116,6 +106,16 @@
   &:focus::placeholder {
     opacity: 0;
   }
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  color: $color-primary;
+  transform: translateY(-50%);
 }
 
 .rectangle-button {
