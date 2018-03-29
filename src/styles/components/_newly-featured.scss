@@ -1,56 +1,19 @@
 .newly-featured {
-  min-height: 30rem;
-  padding: $xl-size 0;
-  background-color: $color-grey-light-1;
-
-  .newly-featured-title {
+  &__title {
     margin-left: 40vw;
-    margin-bottom: 3rem;
-    font-size: 1.2rem;
-    color: $color-primary;
-    text-transform: uppercase;
-    letter-spacing: 3px;
   }
 }
 
 .newly-featured-list {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
 
   &__gallery {
-    position: relative;
-    transition: transform 0.3s ease-out;
-
     &:hover {
       transform: translateY(-1.2rem);
-      cursor: pointer;
     }
   }
 
   &__gallery img {
     width: 15rem;
-    margin-right: 5px;
-  }
-}
-
-.thin-card-info {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  color: #fff;
-
-  p {
-    margin: 0;
-  }
-
-  &__name {
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
-
-  &__price {
-    font-size: 1.6rem;
-    font-weight: 300;
   }
 }

@@ -1,0 +1,52 @@
+.card {
+  min-height: 30rem;
+  padding: $xl-size 0;
+  background-color: $color-grey-light-1;
+
+  &__title {
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    color: $color-primary;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+
+  &__gallery {
+    position: relative;
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__gallery img {
+    margin-right: 5px;
+  }
+}
+
+.card-info {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: #fff;
+  font-weight: 300;
+
+  p {
+    margin: 0;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__price {
+    font-size: 1.6rem;
+  }
+}

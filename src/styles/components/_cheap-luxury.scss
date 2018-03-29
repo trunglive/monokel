@@ -1,58 +1,20 @@
 .cheap-luxury {
-  min-height: 30rem;
-  padding: $xl-size 0;
-  background-color: $color-grey-light-1;
-
   &__title {
-    margin-left: 20vw;
-    margin-bottom: 3rem;
-    font-size: 1.2rem;
-    color: $color-primary;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    margin-left: 20vw; 
   }
 }
 
 .cheap-luxury-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-left: 2rem;
+  justify-content: flex-start; 
 
   &__gallery {
-    position: relative;
-    transition: transform 0.2s ease-in;
-
     &:hover {
-      transform: scale(1.1);
-      cursor: pointer;
-      z-index: 10;
+      z-index: 10; 
+      transform: scale(1.1); 
     }
   }
 
   &__gallery img {
-    width: 18rem;
-    margin-right: 5px;
-  }
-}
-
-.square-card-info {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  color: #fff;
-  font-weight: 300;
-  z-index: 10;
-
-  p {
-    margin: 0;
-  }
-
-  &__name {
-    font-size: 1.2rem;
-  }
-
-  &__price {
-    font-size: 1.6rem;
+    width: 18rem; 
   }
 }
