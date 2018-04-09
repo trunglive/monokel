@@ -15,6 +15,10 @@ footer {
   &__logo {
     font-family: $font-display;
     font-size: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 4rem;
+    }
   }
 
   &__nav {
@@ -32,11 +36,36 @@ footer {
       &:hover {
         cursor: pointer;
       }
+
+      @media only screen and (max-width: $bp-small) {
+        padding-left: 0;
+        padding-right: 2rem;
+        margin-left: 1rem;
+      }
     }
 
     & > div {
       margin-left: 6rem;
+
+      @media only screen and (max-width: $bp-small) {
+        margin-left: 0;
+        margin-top: 1.5rem;
+      }
     }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    margin: 0 8rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }
 
@@ -50,5 +79,9 @@ footer {
 
   a {
     color: inherit;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-top: 8rem;
   }
 }

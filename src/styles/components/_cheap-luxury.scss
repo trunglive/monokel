@@ -2,6 +2,10 @@
   &__title {
     margin-left: 20vw; 
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    text-align: center;
+  }
 }
 
 .cheap-luxury-list {
@@ -12,9 +16,17 @@
       z-index: 10; 
       transform: scale(1.1); 
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 5px;
+    }
   }
 
   &__gallery img {
     width: 18rem; 
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    justify-content: flex-end;
   }
 }

@@ -4,27 +4,6 @@
   background: linear-gradient($color-blue-dark, $color-grey-light-2);
 }
 
-.featured-properties-inner {
-  position: absolute;
-  top: 67%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 97.2rem;
-  height: 16rem;
-  background-color: #fff;
-  box-shadow: 3px -5px 30px -10px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-
-  &__text {
-    padding-top: 1.5rem;
-    padding-left: 2.5rem;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    color: $color-primary;
-    letter-spacing: 3px;
-  }
-}
-
 .featured-properties-nav {
   position: absolute;
   top: 0;
@@ -32,6 +11,16 @@
   display: flex;
   justify-content: flex-end;
   z-index: 3;
+
+  @media only screen and (max-width: $bp-large) {
+    right: 8rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    top: 5rem;
+    right: 50%;
+    transform: translate(47%, -50%);
+  }
 }
 
 .featured-properties-card-list {
@@ -41,8 +30,38 @@
   justify-content: center;
   max-width: 98rem;
   margin: 0 auto;
-  padding: $xl-size 0;
+  padding: 6rem 0 $xl-size;
   font-size: 1.4rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 10rem 0 $xl-size;
+  }
+}
+
+.menu-background {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 97.2rem;
+  height: 16rem;
+  margin-top: -4rem;
+  padding: 3rem 0 0 3rem;
+  font-size: 1.2rem;
+  color: $color-primary;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: #fff;
+  box-shadow: 3px 4px 24px -5px rgba(0, 0, 0, 0.1);
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 3rem 0 0 8rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 27.4rem;
+    padding: 3rem 0;
+    text-align: center;
+  }
 }
 
 .featured-properties-card-list-item {
@@ -98,6 +117,10 @@
       font-size: 1rem;
       font-weight: 300;
     }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 40rem;
   }
 }
 
@@ -170,6 +193,10 @@
       font-size: 1.2rem;
       font-weight: 300;
     }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 2rem;
   }
 }
 

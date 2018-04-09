@@ -35,6 +35,7 @@ class FeaturedProperties extends Component {
 
     return (
       <section className="featured-properties">
+      <div className="menu-background">Featured Properties</div>
         <div className="featured-properties-card-list">
           <div className="featured-properties-nav">
             <Dropdown

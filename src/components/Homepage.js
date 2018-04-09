@@ -23,9 +23,6 @@ class Homepage extends Component {
     return (
       <div className="homepage">
         <Header onSearchChange={this.handleSearchChange} searchValue={value} />
-        <div className="featured-properties-inner">
-          <p className="featured-properties-inner__text">Featured Properties</p>
-        </div>
         <div className="featured-properties-container">
           <FeaturedProperties searchValue={value} />
         </div>
