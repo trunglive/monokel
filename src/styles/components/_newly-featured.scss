@@ -1,11 +1,17 @@
 .newly-featured {
-  margin-right: 2.5rem;
-
   &__title {
-    margin-left: 40vw;
+    margin-left: 40rem;
 
     @media only screen and (max-width: $bp-medium) {
-      margin-left: 30vw;
+      margin-left: 15rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-left: 4rem;
     }
   }
 
@@ -25,6 +31,10 @@
 
   &__gallery img {
     width: 15rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 13rem;
+    }
   }
 
   @media only screen and (max-width: $bp-medium) {
