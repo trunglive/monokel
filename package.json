@@ -5,7 +5,6 @@
   "author": "Trung Vo",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev": "webpack-dev-server --open",
@@ -21,7 +20,6 @@
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
-    "live-server": "^1.2.0",
     "node-sass": "4.7.2",
     "normalize.css": "8.0.0",
     "react": "16.2.0",
@@ -29,8 +27,9 @@
     "sass-loader": "6.0.6",
     "semantic-ui-react": "^0.78.2",
     "style-loader": "0.20.2",
-    "validator": "9.4.1",
-    "webpack": "3.11.0",
+    "webpack": "3.11.0"
+  },
+  "devDependencies": {
     "webpack-dev-server": "2.11.1"
   }
 }

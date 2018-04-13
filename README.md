@@ -29,8 +29,8 @@ $ git clone https://github.com/trunglive/real-estate-project.git
 
 ```shell
 $ cd monokel
-$ npm install
-$ npm start
+$ yarn install
+$ yarn dev
 ```
 
 ### Contributor
