@@ -15,7 +15,7 @@ The search bar is limited to particular keywords of cities, which can be found i
 
 https://monokel-travel.herokuapp.com
 
-![monokel](monokel-demo.jpg)
+![monokel](monokel-demo.png)
 
 ### Quick Start
 
