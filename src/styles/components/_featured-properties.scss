@@ -54,6 +54,7 @@
   box-shadow: 3px 4px 24px -5px rgba(0, 0, 0, 0.1);
 
   @media only screen and (max-width: $bp-large) {
+    width: 100vw;
     padding: 3rem 0 0 8rem;
   }
 

@@ -8,7 +8,7 @@
   background-color: $color-grey-light-1;
 
   @media only screen and (max-width: $bp-smallest) {
-    min-height: 100vh;
+    min-height: 85vh;
   }
 }
 
@@ -88,9 +88,10 @@
 }
 
 .search-group {
-  text-align: center;
+  margin: 0 auto;
   padding-bottom: 10rem;
   font-size: 1.4rem;
+  text-align: center;
 
   &__content {
     &--bold {
@@ -142,11 +143,11 @@
   }
 
   @media only screen and (max-width: $bp-small) {
-    width: 22rem;
+    width: 26rem;
   }
 
   @media only screen and (max-width: $bp-smallest) {
-    width: 16rem;
+    width: 22rem;
   }
 }
 
