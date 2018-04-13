@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import HomeCard from './HomeCard';
-import { listing } from '../utils/data';
-import { Dropdown } from 'semantic-ui-react';
-import * as Option from '../utils/helpers';
+import React, { Component } from "react";
+import HomeCard from "./HomeCard";
+import { listing } from "../utils/data";
+import { Dropdown } from "semantic-ui-react";
+import * as Option from "../utils/helpers";
 
-class FeaturedProperties extends Component {
+export default class FeaturedProperties extends Component {
   state = {
-    listing: '',
-    typeValue: 'all',
-    sortValue: 'default'
+    listing: "",
+    typeValue: "all",
+    sortValue: "default"
   };
 
   onTypeChange = (event, { value }) => {
@@ -35,7 +35,7 @@ class FeaturedProperties extends Component {
 
     return (
       <section className="featured-properties">
-      <div className="menu-background">Featured Properties</div>
+        <div className="menu-background">Featured Properties</div>
         <div className="featured-properties-card-list">
           <div className="featured-properties-nav">
             <Dropdown
@@ -63,8 +63,6 @@ class FeaturedProperties extends Component {
   }
 }
 
-export default FeaturedProperties;
-
 const sorting = (listing, typeValue, sortValue, searchValue) => {
   if (searchValue) {
     return listing
@@ -74,9 +72,9 @@ const sorting = (listing, typeValue, sortValue, searchValue) => {
       .map(filteredHome => (
         <HomeCard key={filteredHome.name} {...filteredHome} />
       ));
-  } else if (sortValue === 'default' && typeValue === 'all') {
+  } else if (sortValue === "default" && typeValue === "all") {
     return listing.map(home => <HomeCard key={home.name} {...home} />);
-  } else if (sortValue !== 'default' && typeValue === 'all') {
+  } else if (sortValue !== "default" && typeValue === "all") {
     return listing
       .sort(
         (currentHome, nextHome) =>

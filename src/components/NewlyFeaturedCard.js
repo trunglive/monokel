@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from "react";
 
 const NewlyFeaturedCard = ({ name, price, image_url }) => (
   <div className="card-list__gallery newly-featured-list__gallery">

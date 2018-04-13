@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import Header from './Header';
-import FeaturedProperties from './FeaturedProperties';
-import MeetMonokel from './MeetMonokel';
-import NewlyFeatured from './NewlyFeatured';
-import CheapLuxury from './CheapLuxury';
-import Footer from './Footer';
+import React, { Component } from "react";
+import Header from "./Header";
+import FeaturedProperties from "./FeaturedProperties";
+import MeetMonokel from "./MeetMonokel";
+import NewlyFeatured from "./NewlyFeatured";
+import CheapLuxury from "./CheapLuxury";
+import Footer from "./Footer";
 
-class Homepage extends Component {
+export default class Homepage extends Component {
   state = {
-    value: ''
+    value: ""
   };
 
   handleSearchChange = event => {
@@ -34,5 +34,3 @@ class Homepage extends Component {
     );
   }
 }
-
-export default Homepage;

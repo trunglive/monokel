@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from "react";
 
 const CheapLuxuryCard = ({ name, price, image_url }) => (
   <div className="card-list__gallery cheap-luxury-list__gallery">

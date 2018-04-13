@@ -1,6 +1,6 @@
 .cheap-luxury {
   &__title {
-    margin-left: 20vw; 
+    margin-left: 20vw;
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -9,12 +9,12 @@
 }
 
 .cheap-luxury-list {
-  justify-content: flex-start; 
+  justify-content: flex-start;
 
   &__gallery {
     &:hover {
-      z-index: 10; 
-      transform: scale(1.1); 
+      z-index: 10;
+      transform: scale(1.1);
     }
 
     @media only screen and (max-width: $bp-medium) {
@@ -23,7 +23,7 @@
   }
 
   &__gallery img {
-    width: 18rem; 
+    width: 18rem;
 
     @media only screen and (max-width: $bp-smallest) {
       width: 14rem;

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const Footer = () => (
   <footer>
@@ -38,10 +38,3 @@ const Footer = () => (
 );
 
 export default Footer;
-
-{
-  /* <i className="footer__nav--social-facebook ion-social-facebook" /> */
-}
-{
-  /* <i className="footer__nav--social-instagram ion-social-instagram-outline" /> */
-}
