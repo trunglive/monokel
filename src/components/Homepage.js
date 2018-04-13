@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Header from "./Header";
-import FeaturedProperties from "./FeaturedProperties";
-import MeetMonokel from "./MeetMonokel";
-import NewlyFeatured from "./NewlyFeatured";
-import CheapLuxury from "./CheapLuxury";
-import Footer from "./Footer";
+import Header from "./navigation/Header";
+import FeaturedProperties from "./featured-properties/FeaturedProperties";
+import MeetMonokel from "./meet-monokel/MeetMonokel";
+import NewlyFeatured from "./newly-featured/NewlyFeatured";
+import CheapLuxury from "./cheap-and-luxury/CheapLuxury";
+import Footer from "./navigation/Footer";
 
 export default class Homepage extends Component {
   state = {

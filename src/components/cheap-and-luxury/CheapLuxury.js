@@ -1,6 +1,6 @@
 import React from "react";
 import CheapLuxuryCard from "./CheapLuxuryCard";
-import { cheapLuxury } from "../utils/data";
+import { cheapLuxury } from "../../utils/data";
 
 const CheapLuxury = () => (
   <div className="card cheap-luxury">

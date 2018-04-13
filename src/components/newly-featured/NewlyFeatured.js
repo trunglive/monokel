@@ -1,6 +1,6 @@
 import React from "react";
 import NewlyFeaturedCard from "./NewlyFeaturedCard";
-import { newlyFeatured } from "../utils/data";
+import { newlyFeatured } from "../../utils/data";
 
 const NewlyFeatured = () => (
   <div className="card newly-featured">

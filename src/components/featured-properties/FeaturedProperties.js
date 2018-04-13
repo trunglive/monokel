@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import HomeCard from "./HomeCard";
-import { listing } from "../utils/data";
+import { listing } from "../../utils/data";
 import { Dropdown } from "semantic-ui-react";
-import * as Option from "../utils/helpers";
+import * as Option from "../../utils/helpers";
 
 export default class FeaturedProperties extends Component {
   state = {
