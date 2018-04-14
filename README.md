@@ -22,7 +22,7 @@ https://monokel-travel.herokuapp.com
 **Clone the project**
 
 ```shell
-$ git clone https://github.com/trunglive/real-estate-project.git
+$ git clone https://github.com/trunglive/monokel.git
 ```
 
 **Run the app**
@@ -30,7 +30,7 @@ $ git clone https://github.com/trunglive/real-estate-project.git
 ```shell
 $ cd monokel
 $ yarn install
-$ yarn dev
+$ yarn run dev
 ```
 
 ### Contributor
