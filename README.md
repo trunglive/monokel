@@ -13,7 +13,7 @@ The search bar is limited to particular keywords of cities, which can be found i
 
 ### Demo
 
-https://monokel-travel.herokuapp.com
+https://monokel-app.firebaseapp.com
 
 ![monokel](monokel-demo.jpg)
 
