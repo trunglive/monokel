@@ -4,11 +4,34 @@
   background-color: $color-grey-light-1;
 
   &__title {
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
     font-size: 1.2rem;
     color: $color-primary;
     text-transform: uppercase;
     letter-spacing: 3px;
+  }
+}
+
+.title-and-arrow {
+  display: flex;
+  justify-content: space-between;
+
+  .arrow-group {
+    margin-right: 20%;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 10%;
+    }
+  }
+
+  .circle-arrow__icon {
+    display: inline-block;
+    padding-top: 0;
+    margin-left: -1rem;
+  }
+
+  .arrow-left {
+    transform: rotate(180deg);
   }
 }
 
