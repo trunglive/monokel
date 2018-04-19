@@ -2,7 +2,7 @@
 
 ## Monokel
 
-> Monokel project is a single page real estate application. Users can be able to filter the results based on type (apartment, house, studio, villa, condo) and sorting (price, area, bedrooms, bathrooms). There is no backend API for this project, all data is located in utils folder.
+> Monokel is a demo for real estate web app. Users can be able to filter the results based on type (apartment, house, studio, villa, condo) and sorting (price, area, bedrooms, bathrooms). There is no backend API for this project, all data is located in utils folder.
 
 This project is built using ReactJS for user interfaces and SASS for styling. I was really interested in the design since I could implement React to build many component blocks and manage states in declarative way from user input (city search & filter). Some features are not available (signup, login, bookmarks).
 

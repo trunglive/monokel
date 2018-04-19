@@ -7,7 +7,7 @@
     }
 
     @media only screen and (max-width: $bp-medium) {
-      margin-left: 8rem;
+      margin-left: 13rem;
     }
 
     @media only screen and (max-width: $bp-smallest) {
@@ -21,7 +21,7 @@
 }
 
 .newly-featured-list {
-  justify-content: flex-end;
+  margin-left: 30%;
 
   &__gallery {
     &:hover {
@@ -35,9 +35,5 @@
     @media only screen and (max-width: $bp-smallest) {
       width: 13rem;
     }
-  }
-
-  @media only screen and (max-width: $bp-medium) {
-    justify-content: flex-start;
   }
 }
