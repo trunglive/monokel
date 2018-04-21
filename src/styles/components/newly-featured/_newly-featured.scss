@@ -36,4 +36,8 @@
       width: 13rem;
     }
   }
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin-left: 0;
+  }
 }

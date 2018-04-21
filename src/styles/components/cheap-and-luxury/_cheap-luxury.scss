@@ -1,6 +1,10 @@
 .cheap-luxury {
   &__title {
     margin-left: 20vw;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-left: 4rem;
+    }
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -16,14 +20,10 @@
       z-index: 10;
       transform: scale(1.1);
     }
-
-    @media only screen and (max-width: $bp-medium) {
-      margin-right: 5px;
-    }
   }
 
   &__gallery img {
-    width: 18rem;
+    width: 22rem;
 
     @media only screen and (max-width: $bp-smallest) {
       width: 14rem;
