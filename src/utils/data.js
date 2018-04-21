@@ -460,61 +460,121 @@ export const cheapLuxury = [
   {
     name: "Alacater",
     price: 5299,
-    image_url: "/images/cheap_luxury/home-cl-1.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-1.jpg"
   },
   {
     name: "Biesae",
     price: 3599,
-    image_url: "/images/cheap_luxury/home-cl-2.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-2.jpg"
   },
   {
     name: "Heuria",
     price: 6799,
-    image_url: "/images/cheap_luxury/home-cl-3.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-3.jpg"
   },
   {
     name: "Alateria",
     price: 4099,
-    image_url: "/images/cheap_luxury/home-cl-4.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-4.jpg"
   },
   {
     name: "Luxuria",
     price: 7399,
-    image_url: "/images/cheap_luxury/home-cl-5.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-5.jpg"
   },
   {
     name: "Famerias",
     price: 3999,
-    image_url: "/images/cheap_luxury/home-cl-6.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-6.jpg"
   },
   {
     name: "Tulicia",
     price: 5899,
-    image_url: "/images/cheap_luxury/home-cl-7.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-7.jpg"
   },
   {
     name: "Ricavia",
     price: 6599,
-    image_url: "/images/cheap_luxury/home-cl-8.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-8.jpg"
   },
   {
     name: "Hazanae",
     price: 7099,
-    image_url: "/images/cheap_luxury/home-cl-9.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-9.jpg"
   },
   {
     name: "Yerisette",
     price: 4499,
-    image_url: "/images/cheap_luxury/home-cl-10.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-10.jpg"
   },
   {
     name: "Dervalina",
     price: 5299,
-    image_url: "/images/cheap_luxury/home-cl-11.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-11.jpg"
   },
   {
     name: "Kerwitche",
     price: 3299,
-    image_url: "/images/cheap_luxury/home-cl-12.jpeg"
+    image_url: "/images/cheap_luxury/home-cl-12.jpg"
+  },
+  {
+    name: "Eliersa",
+    price: 5599,
+    image_url: "/images/cheap_luxury/home-cl-13.jpg"
+  },
+  {
+    name: "Turie",
+    price: 6199,
+    image_url: "/images/cheap_luxury/home-cl-14.jpg"
+  },
+  {
+    name: "Mierser",
+    price: 3699,
+    image_url: "/images/cheap_luxury/home-cl-15.jpg"
+  },
+  {
+    name: "Milaeu",
+    price: 7099,
+    image_url: "/images/cheap_luxury/home-cl-16.jpg"
+  },
+  {
+    name: "Selare",
+    price: 6699,
+    image_url: "/images/cheap_luxury/home-cl-17.jpg"
+  },
+  {
+    name: "Mylar",
+    price: 4499,
+    image_url: "/images/cheap_luxury/home-cl-18.jpg"
+  },
+  {
+    name: "Hamier",
+    price: 6399,
+    image_url: "/images/cheap_luxury/home-cl-19.jpg"
+  },
+  {
+    name: "Heresie",
+    price: 6899,
+    image_url: "/images/cheap_luxury/home-cl-20.jpg"
+  },
+  {
+    name: "Leiser",
+    price: 4199,
+    image_url: "/images/cheap_luxury/home-cl-21.jpg"
+  },
+  {
+    name: "Opier",
+    price: 6999,
+    image_url: "/images/cheap_luxury/home-cl-22.jpg"
+  },
+  {
+    name: "Reluae",
+    price: 7799,
+    image_url: "/images/cheap_luxury/home-cl-23.jpg"
+  },
+  {
+    name: "Galies",
+    price: 5599,
+    image_url: "/images/cheap_luxury/home-cl-24.jpg"
   }
 ];

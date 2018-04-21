@@ -4,16 +4,34 @@ import { cheapLuxury } from "../../utils/data";
 
 const CheapLuxury = () => (
   <div className="card cheap-luxury">
-    
     <div className="title-and-arrow">
-    <p className="card__title cheap-luxury__title">Cheap and Luxury</p>
-    <div className="arrow-group">
-      <img className="circle-arrow__icon arrow-left" src="/icons/arrow-right.svg" />
-      <img className="circle-arrow__icon arrow-right" src="/icons/arrow-right.svg" />
+      <p className="card__title cheap-luxury__title">Cheap and Luxury</p>
+      <div className="arrow-group">
+        <img
+          className="circle-arrow__icon arrow-left"
+          src="/icons/arrow-right.svg"
+        />
+        <img
+          className="circle-arrow__icon arrow-right"
+          src="/icons/arrow-right.svg"
+        />
+      </div>
     </div>
-  </div>
     <div className="card-list cheap-luxury-list">
-      {cheapLuxury.map(home => <CheapLuxuryCard key={home.name} {...home} />)}
+      {cheapLuxury.map(
+        (home, index) =>
+          index < cheapLuxury.length / 2 && (
+            <CheapLuxuryCard key={home.name} {...home} />
+          )
+      )}
+    </div>
+    <div className="card-list cheap-luxury-list">
+      {cheapLuxury.map(
+        (home, index) =>
+          index >= cheapLuxury.length / 2 && (
+            <CheapLuxuryCard key={home.name} {...home} />
+          )
+      )}
     </div>
   </div>
 );
