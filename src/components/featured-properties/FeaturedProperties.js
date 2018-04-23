@@ -7,8 +7,8 @@ import * as Option from "../../utils/helpers";
 export default class FeaturedProperties extends Component {
   state = {
     listing: "",
-    typeValue: "all",
-    sortValue: "default"
+    typeValue: "All",
+    sortValue: "Default"
   };
 
   onTypeChange = (event, { value }) => {
@@ -32,7 +32,7 @@ export default class FeaturedProperties extends Component {
   render() {
     const { listing, typeValue, sortValue } = this.state;
     const { searchValue } = this.props;
-
+    console.log(typeValue);
     return (
       <section className="featured-properties">
         <div className="menu-background">Featured Properties</div>
@@ -56,40 +56,25 @@ export default class FeaturedProperties extends Component {
               className="sort-dropdown"
             />
           </div>
-          {sorting(listing, typeValue, sortValue, searchValue)}
+          {filteredHome(listing, typeValue, sortValue, searchValue)}
         </div>
       </section>
     );
   }
 }
 
-const sorting = (listing, typeValue, sortValue, searchValue) => {
-  if (searchValue) {
-    return listing
-      .filter(home =>
+const filteredHome = (listing, typeValue, sortValue, searchValue) => {
+  return listing
+    .filter(
+      home =>
+        (typeValue === "All" || typeValue === home.type) &&
         home.location.city.toLowerCase().includes(searchValue.toLowerCase())
-      )
-      .map(filteredHome => (
-        <HomeCard key={filteredHome.name} {...filteredHome} />
-      ));
-  } else if (sortValue === "default" && typeValue === "all") {
-    return listing.map(home => <HomeCard key={home.name} {...home} />);
-  } else if (sortValue !== "default" && typeValue === "all") {
-    return listing
-      .sort(
-        (currentHome, nextHome) =>
-          currentHome[sortValue] > nextHome[sortValue] ? 1 : -1
-      )
-      .map(sortedHome => <HomeCard key={sortedHome.name} {...sortedHome} />);
-  } else {
-    return listing
-      .filter(home => home.type.toLowerCase() === typeValue)
-      .sort(
-        (currentHome, nextHome) =>
-          currentHome[sortValue] > nextHome[sortValue] ? 1 : -1
-      )
-      .map(filteredHome => (
-        <HomeCard key={filteredHome.name} {...filteredHome} />
-      ));
-  }
+    )
+    .sort(
+      (currentHome, nextHome) =>
+        currentHome[sortValue.toLowerCase()] > nextHome[sortValue.toLowerCase()]
+          ? 1
+          : -1
+    )
+    .map(home => <HomeCard key={home.name} {...home} />);
 };

@@ -1,16 +1,16 @@
 export const type = [
-  { key: 'all', text: 'All', value: 'all' },
-  { key: 'apartment', text: 'Apartment', value: 'apartment' },
-  { key: 'house', text: 'House', value: 'house' },
-  { key: 'studio', text: 'Studio', value: 'studio' },
-  { key: 'villa', text: 'Villa', value: 'villa' },
-  { key: 'condo', text: 'Condo', value: 'condo' },
+  { key: "All", text: "All", value: "All" },
+  { key: "Apartment", text: "Apartment", value: "Apartment" },
+  { key: "House", text: "House", value: "House" },
+  { key: "Studio", text: "Studio", value: "Studio" },
+  { key: "Villa", text: "Villa", value: "Villa" },
+  { key: "Condo", text: "Condo", value: "Condo" }
 ];
 
 export const sort = [
-  { key: 'default', text: 'Default', value: 'default' },
-  { key: 'price', text: 'Price', value: 'price' },
-  { key: 'area', text: 'Area', value: 'area' },
-  { key: 'bedrooms', text: 'Bedrooms', value: 'bedrooms' },
-  { key: 'bathrooms', text: 'Bathrooms', value: 'bathrooms' },
+  { key: "Default", text: "Default", value: "Default" },
+  { key: "Price", text: "Price", value: "Price" },
+  { key: "Area", text: "Area", value: "Area" },
+  { key: "Bedrooms", text: "Bedrooms", value: "Bedrooms" },
+  { key: "Bathrooms", text: "Bathrooms", value: "Bathrooms" }
 ];
