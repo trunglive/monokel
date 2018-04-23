@@ -47,7 +47,7 @@ export default class FeaturedProperties extends Component {
   render() {
     const { listing, typeValue, priceRange, areaRange, sortValue } = this.state;
     const { searchValue } = this.props;
-    console.log(priceRange);
+
     return (
       <section className="featured-properties">
         <div className="menu-background">Featured Properties</div>
