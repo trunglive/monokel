@@ -191,7 +191,7 @@ export const listing = [
     type: "Condo",
     bedrooms: 2,
     bathrooms: 2,
-    area: 40,
+    area: 42,
     extras: ["pool"],
     image_url: "/images/featured_properties/home-fp-14.jpg"
   },
@@ -317,7 +317,7 @@ export const listing = [
     type: "Apartment",
     bedrooms: 4,
     bathrooms: 4,
-    area: 39,
+    area: 40,
     extras: ["pool", "gym", "elevator"],
     image_url: "/images/featured_properties/home-fp-23.jpg"
   },
