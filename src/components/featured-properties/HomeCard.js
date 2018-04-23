@@ -10,7 +10,7 @@ const HomeCard = ({
   image_url
 }) => (
   <div className="featured-properties-card-list-item">
-    <img src={image_url} alt="photo" />
+    <img className="featured-properties-card-list-item__photo" src={image_url} alt="photo" />
     <img src="/icons/bookmark-light.svg" className="bookmark-card-icon" />
     <div className="circle-arrow">
       <img className="circle-arrow__icon" src="/icons/arrow-right.svg" />
