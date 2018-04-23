@@ -10,6 +10,7 @@ export default class FeaturedProperties extends Component {
     listing: "",
     typeValue: "All",
     priceRange: "All",
+    areaRange: "All",
     sortValue: "Default"
   };
 
@@ -22,6 +23,12 @@ export default class FeaturedProperties extends Component {
   onPriceChange = (event, { value }) => {
     this.setState({
       priceRange: value
+    });
+  };
+
+  onAreaChange = (event, { value }) => {
+    this.setState({
+      areaRange: value
     });
   };
 
@@ -38,7 +45,7 @@ export default class FeaturedProperties extends Component {
   }
 
   render() {
-    const { listing, typeValue, priceRange, sortValue } = this.state;
+    const { listing, typeValue, priceRange, areaRange, sortValue } = this.state;
     const { searchValue } = this.props;
     console.log(priceRange);
     return (
@@ -67,15 +74,29 @@ export default class FeaturedProperties extends Component {
             <Dropdown
               upward
               floating
+              options={Option.area}
+              text="Area"
+              onChange={this.onAreaChange}
+              className="sort-dropdown"
+            />
+
+            <Dropdown
+              upward
+              floating
               options={Option.sort}
               text="Sort by"
               onChange={this.onSortChange}
               className="sort-dropdown"
             />
           </div>
-          {HouseSelectors(listing, typeValue, priceRange, sortValue, searchValue).map(
-            home => <HomeCard key={home.name} {...home} />
-          )}
+          {HouseSelectors(
+            listing,
+            typeValue,
+            priceRange,
+            areaRange,
+            sortValue,
+            searchValue
+          ).map(home => <HomeCard key={home.name} {...home} />)}
         </div>
       </section>
     );
