@@ -74,53 +74,61 @@ export default class FeaturedProperties extends Component {
         <div className="menu-background">Featured Properties</div>
         <div className="featured-properties-card-list">
           <div className="featured-properties-nav">
-            <Dropdown
-              upward
-              floating
-              options={Option.type}
-              text="Type"
-              onChange={this.onTypeChange}
-              className="type-dropdown"
-            />
+            <div className="featured-properties-nav__viewing-mode grid-icon">
+              <p>Viewing Mode</p>
+              <div>
+                <img
+                  className="grid-icon--equal"
+                  src="/icons/equal-grid.svg"
+                  onClick={this.onEqualGridDisplay}
+                />
+                <img
+                  className="grid-icon--unequal"
+                  src="/icons/unequal-grid.svg"
+                  onClick={this.onUnequalGridDisplay}
+                />
+              </div>
+            </div>
 
-            <Dropdown
-              upward
-              floating
-              options={Option.price}
-              text="Price"
-              onChange={this.onPriceChange}
-              className="price-dropdown"
-            />
+            <div className="featured-properties-nav__filter">
+              <p>Filter</p>
+              <div>
+                <Dropdown
+                  upward
+                  floating
+                  options={Option.type}
+                  text="Type"
+                  onChange={this.onTypeChange}
+                  className="type-dropdown"
+                />
 
-            <Dropdown
-              upward
-              floating
-              options={Option.area}
-              text="Area"
-              onChange={this.onAreaChange}
-              className="area-dropdown"
-            />
+                <Dropdown
+                  upward
+                  floating
+                  options={Option.price}
+                  text="Price"
+                  onChange={this.onPriceChange}
+                  className="price-dropdown"
+                />
 
-            <Dropdown
-              upward
-              floating
-              options={Option.sort}
-              text="Sort by"
-              onChange={this.onSortChange}
-              className="sort-dropdown"
-            />
+                <Dropdown
+                  upward
+                  floating
+                  options={Option.area}
+                  text="Area"
+                  onChange={this.onAreaChange}
+                  className="area-dropdown"
+                />
 
-            <div className="grid-icon">
-              <img
-                className="grid-icon--equal"
-                src="/icons/equal-grid.svg"
-                onClick={this.onEqualGridDisplay}
-              />
-              <img
-                className="grid-icon--unequal"
-                src="/icons/unequal-grid.svg"
-                onClick={this.onUnequalGridDisplay}
-              />
+                <Dropdown
+                  upward
+                  floating
+                  options={Option.sort}
+                  text="Sort by"
+                  onChange={this.onSortChange}
+                  className="sort-dropdown"
+                />
+              </div>
             </div>
           </div>
           {HouseSelectors(
