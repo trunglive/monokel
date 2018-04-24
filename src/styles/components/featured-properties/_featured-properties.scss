@@ -67,6 +67,18 @@
   }
 }
 
+.grid-icon {
+  width: 6rem;
+  margin-left: 10rem;
+
+  &--equal,
+  &--unequal {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 1rem;
+  }
+}
+
 .featured-properties-card-list-item {
   position: relative;
   min-height: 24rem;
@@ -93,8 +105,8 @@
     }
 
     &--price {
-      font-size: 1.6rem;
-      font-weight: 600;
+      font-size: 1.8rem;
+      font-weight: 300;
     }
   }
 
@@ -156,8 +168,6 @@
     }
   }
 
-  
-
   @media only screen and (max-width: $bp-medium) {
     grid-column-end: span 1;
     grid-row-end: span 2;
@@ -168,6 +178,11 @@
   @media only screen and (max-width: $bp-medium) {
     grid-row-end: span 2;
   }
+}
+
+.featured-properties-card-list-item.equal-grid {
+  grid-column-end: span 1;
+  grid-row-end: span 1;
 }
 
 .bedrooms-group,
@@ -228,6 +243,8 @@
 }
 
 .dropdown.type-dropdown,
+.dropdown.price-dropdown,
+.dropdown.area-dropdown,
 .dropdown.sort-dropdown {
   width: 7rem;
   margin-left: 1rem;

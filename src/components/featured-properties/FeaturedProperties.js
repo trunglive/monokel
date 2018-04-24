@@ -4,6 +4,7 @@ import { listing } from "../../utils/data";
 import { Dropdown } from "semantic-ui-react";
 import * as Option from "../../utils/helpers";
 import { HouseSelectors } from "../../selectors/HouseSelectors";
+import { WSAEUSERS, EBUSY } from "constants";
 
 export default class FeaturedProperties extends Component {
   state = {
@@ -11,7 +12,8 @@ export default class FeaturedProperties extends Component {
     typeValue: "All",
     priceRange: "All",
     areaRange: "All",
-    sortValue: "Default"
+    sortValue: "Default",
+    equalGrid: false
   };
 
   onTypeChange = (event, { value }) => {
@@ -38,6 +40,18 @@ export default class FeaturedProperties extends Component {
     });
   };
 
+  onEqualGridDisplay = () => {
+    this.setState({
+      equalGrid: true
+    });
+  };
+
+  onUnequalGridDisplay = () => {
+    this.setState({
+      equalGrid: false
+    });
+  };
+
   componentWillMount() {
     this.setState({
       listing
@@ -45,7 +59,14 @@ export default class FeaturedProperties extends Component {
   }
 
   render() {
-    const { listing, typeValue, priceRange, areaRange, sortValue } = this.state;
+    const {
+      listing,
+      typeValue,
+      priceRange,
+      areaRange,
+      sortValue,
+      equalGrid
+    } = this.state;
     const { searchValue } = this.props;
 
     return (
@@ -68,7 +89,7 @@ export default class FeaturedProperties extends Component {
               options={Option.price}
               text="Price"
               onChange={this.onPriceChange}
-              className="sort-dropdown"
+              className="price-dropdown"
             />
 
             <Dropdown
@@ -77,7 +98,7 @@ export default class FeaturedProperties extends Component {
               options={Option.area}
               text="Area"
               onChange={this.onAreaChange}
-              className="sort-dropdown"
+              className="area-dropdown"
             />
 
             <Dropdown
@@ -88,6 +109,19 @@ export default class FeaturedProperties extends Component {
               onChange={this.onSortChange}
               className="sort-dropdown"
             />
+
+            <div className="grid-icon">
+              <img
+                className="grid-icon--equal"
+                src="/icons/equal-grid.svg"
+                onClick={this.onEqualGridDisplay}
+              />
+              <img
+                className="grid-icon--unequal"
+                src="/icons/unequal-grid.svg"
+                onClick={this.onUnequalGridDisplay}
+              />
+            </div>
           </div>
           {HouseSelectors(
             listing,
@@ -96,7 +130,13 @@ export default class FeaturedProperties extends Component {
             areaRange,
             sortValue,
             searchValue
-          ).map(home => <HomeCard key={home.name} {...home} />)}
+          ).map(home => (
+            <HomeCard
+              key={home.name}
+              {...home}
+              equalGrid={equalGrid ? "equal-grid" : "unequal-grid"}
+            />
+          ))}
         </div>
       </section>
     );

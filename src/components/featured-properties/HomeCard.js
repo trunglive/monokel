@@ -7,9 +7,10 @@ const HomeCard = ({
   bedrooms,
   bathrooms,
   area,
-  image_url
+  image_url,
+  equalGrid
 }) => (
-  <div className="featured-properties-card-list-item">
+  <div className={`featured-properties-card-list-item ${equalGrid}`}>
     <img className="featured-properties-card-list-item__photo featured-properties-photo" src={image_url} alt="photo" />
     <img src="/icons/bookmark-light.svg" className="bookmark-card-icon" />
     <div className="circle-arrow">
