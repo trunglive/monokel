@@ -10,7 +10,7 @@ const HomeCard = ({
   image_url
 }) => (
   <div className="featured-properties-card-list-item">
-    <img className="featured-properties-card-list-item__photo" src={image_url} alt="photo" />
+    <img className="featured-properties-card-list-item__photo featured-properties-photo" src={image_url} alt="photo" />
     <img src="/icons/bookmark-light.svg" className="bookmark-card-icon" />
     <div className="circle-arrow">
       <img className="circle-arrow__icon" src="/icons/arrow-right.svg" />
@@ -24,7 +24,7 @@ const HomeCard = ({
       </div>
     </div>
 
-    <div className="featured-properties-card-list-item__info">
+    <div className="featured-properties-card-list-item__info info-container">
       <div className="featured-properties-card-list-item__info--top">
         <div>{type}</div>
       </div>
