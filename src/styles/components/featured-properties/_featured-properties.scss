@@ -7,30 +7,43 @@
 .featured-properties-nav {
   position: absolute;
   top: 0;
-  right: 18rem;
+  right: 17%;
   z-index: 3;
   display: flex;
   justify-content: flex-end;
 
   &__viewing-mode {
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
     }
   }
 
   &__filter {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
 
     p {
       font-size: 1.2rem;
       font-weight: 600;
       text-transform: uppercase;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      min-width: 38rem;
+      text-align: center;
     }
   }
 
+  @media only screen and (max-width: $bp-largest) {
+    right: 12%;
+  }
+
   @media only screen and (max-width: $bp-large) {
-    right: 4rem;
+    right: 7%;
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -98,6 +111,10 @@
     width: 1.8rem;
     height: 1.8rem;
     margin-right: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -166,14 +183,6 @@
     min-height: 85%;
   }
 
-  .info-container {
-    padding: 0 4rem;
-
-    @media only screen and (max-width: $bp-medium) {
-      padding: 0 2rem;
-    }
-  }
-
   @media only screen and (max-width: $bp-medium) {
     grid-column-end: span 1;
   }
@@ -181,14 +190,6 @@
 
 .featured-properties-card-list-item:nth-child(5n + 5) {
   grid-column-end: span 2;
-
-  .info-container {
-    padding: 0 4rem;
-
-    @media only screen and (max-width: $bp-medium) {
-      padding: 0 2rem;
-    }
-  }
 
   @media only screen and (max-width: $bp-medium) {
     grid-column-end: span 1;
@@ -284,11 +285,11 @@
   }
 
   @media only screen and (max-width: $bp-medium) {
-    margin: 2rem;
+    margin: 1rem;
   }
 
   @media only screen and (max-width: $bp-small) {
-    margin: 1rem;
+    margin: 0.5rem;
   }
 
   @media only screen and (max-width: $bp-smallest) {

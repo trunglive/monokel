@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { slide as Menu } from "react-burger-menu";
 import { Dropdown } from "semantic-ui-react";
 
 import HomeCard from "./HomeCard";
@@ -80,7 +79,7 @@ export default class FeaturedProperties extends Component {
         <div className="featured-properties-card-list">
           <div className="featured-properties-nav">
             <div className="featured-properties-nav__viewing-mode grid-icon">
-              <p>Viewing Mode</p>
+              <p>Viewing</p>
               <div>
                 <img
                   className="grid-icon--equal"
