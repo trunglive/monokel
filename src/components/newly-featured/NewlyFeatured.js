@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import NewlyFeaturedCard from "./NewlyFeaturedCard";
 import { newlyFeatured } from "../../utils/data";
 

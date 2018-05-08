@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import HomeCard from "./HomeCard";
-import { listing } from "../../utils/data";
+import { slide as Menu } from "react-burger-menu";
 import { Dropdown } from "semantic-ui-react";
-import * as Option from "../../utils/helpers";
+
+import HomeCard from "./HomeCard";
 import { HouseSelectors } from "../../selectors/HouseSelectors";
-import { WSAEUSERS, EBUSY } from "constants";
+import { listing } from "../../utils/data";
+import * as Option from "../../utils/helpers";
 
 export default class FeaturedProperties extends Component {
   state = {
@@ -50,6 +51,10 @@ export default class FeaturedProperties extends Component {
     this.setState({
       equalGrid: false
     });
+  };
+
+  showSettings = event => {
+    event.preventDefault();
   };
 
   componentWillMount() {

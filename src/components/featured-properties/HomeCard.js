@@ -11,7 +11,11 @@ const HomeCard = ({
   equalGrid
 }) => (
   <div className={`featured-properties-card-list-item ${equalGrid}`}>
-    <img className="featured-properties-card-list-item__photo featured-properties-photo" src={image_url} alt="photo" />
+    <img
+      className="featured-properties-card-list-item__photo featured-properties-photo"
+      src={image_url}
+      alt="photo"
+    />
     <img src="/icons/bookmark-light.svg" className="bookmark-card-icon" />
     <div className="circle-arrow">
       <img className="circle-arrow__icon" src="/icons/arrow-right.svg" />

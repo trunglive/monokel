@@ -1,4 +1,5 @@
 import React from "react";
+
 import CheapLuxuryCard from "./CheapLuxuryCard";
 import { cheapLuxury } from "../../utils/data";
 

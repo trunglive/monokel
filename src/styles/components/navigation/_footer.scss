@@ -38,9 +38,9 @@ footer {
       }
 
       @media only screen and (max-width: $bp-small) {
+        margin-left: 1rem;
         padding-left: 0;
         padding-right: 2rem;
-        margin-left: 1rem;
       }
     }
 
@@ -72,9 +72,9 @@ footer {
 .author {
   padding-top: 14rem;
   padding-bottom: 4rem;
-  color: #fff;
-  font-weight: 100;
   font-size: 1.4rem;
+  font-weight: 100;
+  color: #fff;
   text-align: center;
 
   a {
