@@ -1,37 +1,45 @@
 {
   "name": "monokel",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "description": "real estate web app",
   "main": "index.js",
   "author": "Trung Vo",
   "license": "MIT",
   "scripts": {
-    "build:dev": "webpack",
-    "build:prod": "webpack -p --env production",
-    "dev": "webpack-dev-server --open",
-    "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prod"
+    "build": "webpack -p --env production",
+    "start": "webpack-dev-server --mode development --open"
   },
+  "keywords": [
+    "real estate",
+    "travel",
+    "abroad",
+    "apartment",
+    "condo",
+    "house",
+    "studio",
+    "villa"
+  ],
   "dependencies": {
+    "react": "16.6.3",
+    "react-burger-menu": "^2.5.4",
+    "react-dom": "16.6.3",
+    "semantic-ui-react": "^0.83.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
     "babel-loader": "8.0.4",
     "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-preset-env": "1.7.0",
-    "babel-preset-react": "6.24.1",
     "css-loader": "1.0.1",
-    "express": "^4.16.4",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "node-sass": "^4.10.0",
     "normalize.css": "8.0.1",
-    "react": "16.6.3",
-    "react-burger-menu": "^2.5.4",
-    "react-dom": "16.6.3",
     "sass-loader": "7.1.0",
-    "semantic-ui-react": "^0.83.0",
     "style-loader": "0.23.1",
-    "webpack": "4.25.1"
-  },
-  "devDependencies": {
-    "webpack-dev-server": "3.1.10"
+    "webpack": "4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   }
 }

@@ -32,8 +32,8 @@ $ git clone https://github.com/trunglive/monokel.git
 
 ```shell
 $ cd monokel
-$ yarn install
-$ yarn run dev
+$ npm install
+$ npm run dev
 ```
 
 #### Contributor
