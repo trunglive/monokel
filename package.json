@@ -13,25 +13,25 @@
   },
   "dependencies": {
     "babel-cli": "6.26.0",
-    "babel-core": "6.26.0",
-    "babel-loader": "7.1.2",
+    "babel-core": "6.26.3",
+    "babel-loader": "8.0.4",
     "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-preset-env": "1.6.1",
+    "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
-    "css-loader": "0.28.9",
-    "express": "^4.16.3",
+    "css-loader": "1.0.1",
+    "express": "^4.16.4",
     "extract-text-webpack-plugin": "^3.0.2",
     "node-sass": "^4.10.0",
-    "normalize.css": "8.0.0",
-    "react": "16.2.0",
-    "react-burger-menu": "^2.4.2",
-    "react-dom": "16.2.0",
-    "sass-loader": "6.0.6",
-    "semantic-ui-react": "^0.78.2",
-    "style-loader": "0.20.2",
-    "webpack": "3.11.0"
+    "normalize.css": "8.0.1",
+    "react": "16.6.3",
+    "react-burger-menu": "^2.5.4",
+    "react-dom": "16.6.3",
+    "sass-loader": "7.1.0",
+    "semantic-ui-react": "^0.83.0",
+    "style-loader": "0.23.1",
+    "webpack": "4.25.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.11.1"
+    "webpack-dev-server": "3.1.10"
   }
 }
