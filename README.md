@@ -1,5 +1,6 @@
 #### Design credit of the project: Olga Radzikowna
 
+* https://dribbble.com/shots/4456112-Monokel-final
 * https://dribbble.com/shots/4177962-Find-fancy-home-abroad
 
 #### Monokel
